@@ -12,12 +12,14 @@ class Game extends Component {
       <Scene name="game">
         <BackgroundImage src={background} />
         <ProgressBar className="belief" progress={100} />
-        <Button className="text-area">{decisionNodes[0].intro}</Button>
-        <Button className="button-1" onClick={this.onBuild}>{decisionNodes[0].selection[0].text}</Button>
-        <Button className="button-2" onClick={this.onQuests}>{decisionNodes[0].selection[1].text}</Button>
-        <Button className="button-3" onClick={this.onUpgrades}>{decisionNodes[0].selection[2].text}</Button>
-        <Button className="button-4" onClick={this.onUpgrades}>{decisionNodes[0].selection[2].text}</Button>
-        <ProgressBar className="time" progress={100} />
+        <div className="text-container">
+          <Button className="text-area">{decisionNodes[0].intro}</Button>
+          <Button className="button-1" onClick={this.onBuild}>{decisionNodes[0].selection[0].text}</Button>
+          <Button className="button-2" onClick={this.onQuests}>{decisionNodes[0].selection[1].text}</Button>
+          <Button className="button-3" onClick={this.onUpgrades}>{decisionNodes[0].selection[2].text}</Button>
+          <Button className="button-4" onClick={this.onUpgrades}>{decisionNodes[0].selection[2].text}</Button>
+          <ProgressBar className="time" progress={100} />
+        </div>
       </Scene>
     );
   }
