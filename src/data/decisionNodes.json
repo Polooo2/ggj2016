@@ -1,0 +1,51 @@
+[
+  {
+    "min": 0,
+    "max": 100,
+    "intro": "The crowd is looking at you full of expectation... ",
+    "selection": [
+      {
+        "text": "Wink and say hello?",
+        "effect": 10
+      },
+      {
+        "text": "Start yelling uncomprehending stuff",
+        "effect": -10
+      },
+      {
+        "text": "Pull out our smartphone",
+        "effect": 30
+      }
+    ],
+    "noSelection": 5,
+    "effects": {
+      "pos": "The crowd warms to you and doesnt looks less threatening to you",
+      "neg": "You hear muffled shouting in the background. This doesnt seem to be good ..."
+    }
+  },
+  {
+    "min": 0,
+    "max": 100,
+    "intro": "You see mixed feelings on the faces of the crowd. Some seem to praise you some are more skeptical ... ",
+    "selection": [
+      {
+        "text": "Use your lighter to ignite a build?",
+        "effect": 50
+      },
+      {
+        "text": "Grab the golden mask from the altar",
+        "effect": 100
+      },
+      {
+        "text": "Go back to the future",
+        "effect": -100
+      }
+    ],
+    "noSelection": 5,
+    "effects": {
+      "pos": "Sth happens",
+      "fail": "You return empty handed to your time",
+      "win": "You grab the mask, turn on your timemachine and return as a will-be-rich man"
+    }
+  }
+]
