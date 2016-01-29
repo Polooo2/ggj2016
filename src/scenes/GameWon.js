@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import { Scene } from 'engine';
+import Scene from './Scene';
 import { BackgroundImage, Button, ProgressBar } from 'components';
 import World from 'store/World';
 

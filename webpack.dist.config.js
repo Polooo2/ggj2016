@@ -34,10 +34,7 @@ module.exports = {
 
   resolve: {
     extensions: ['', '.js', '.jsx'],
-    alias: {
-      'lib': __dirname + '/lib'
-    },
-    root: __dirname + '/src'
+    root: path.join(__dirname, '/src')
   },
 
   module: {

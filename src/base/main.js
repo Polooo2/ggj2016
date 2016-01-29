@@ -15,7 +15,7 @@ import ReactDOM from 'react-dom';
 import 'normalize.css/normalize.css';
 import '../styles/main.less';
 
-import { Viewport, SceneDirector } from 'engine';
+import { Viewport, SceneDirector } from 'gameengine';
 
 import FastClick from 'fastclick';
 

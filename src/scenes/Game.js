@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import { Scene } from 'engine';
+import Scene from './Scene';
 import { BackgroundImage, Button, ProgressBar } from 'components';
 
 class Game extends Component {

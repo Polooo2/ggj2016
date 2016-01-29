@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import { Scene } from 'engine';
+import Scene from './Scene';
 import { BackgroundImage, Button, ProgressBar } from 'components';
 import World from 'store/World';
 
@@ -9,16 +9,12 @@ class Intro extends Component {
     World.trigger('scene', 'Game');
   };
 
-  /*
-  <Scene name="intro">
-    <h2>Time traveled into ancient mayan times, oh yeah.</h2>
-    <Button onClick={this.switchToGame}>Continue</Button>
-  </Scene>
-  */
-
   render() {
     return (
-      <div />
+      <Scene name="intro">
+        <h2>Time traveled into ancient mayan times, oh yeah.</h2>
+        <Button onClick={this.switchToGame}>Continue</Button>
+      </Scene>
     );
   }
 }
