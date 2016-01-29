@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 
+import { background } from 'images';
+
 import Scene from './Scene';
 import { BackgroundImage, Button, ProgressBar } from 'components';
 
@@ -7,6 +9,7 @@ class Game extends Component {
   render() {
     return (
       <Scene name="game">
+        <BackgroundImage src={background} />
         <ProgressBar className="belief" progress={100} />
         <Button className="button-1" onClick={this.onBuild}>Defenses</Button>
         <Button className="button-2" onClick={this.onQuests}>Quests</Button>
