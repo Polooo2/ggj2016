@@ -89,24 +89,6 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
 }
 
-.tower {
-  @width: 360px;
-  @height: 360px;
-
-  width: @width;
-  height: @height;
-
-  margin-left: @width * (-0.5);
-  margin-top: @height * (-0.5);
-
-  background-image: url('../images/tower.png');
-  background-size: contain;
-  position: absolute;
-
-  left: 50%;
-  top: 50% + 4rem;
-}
-
 .menu-container {
   opacity: 1;
   transition: opacity 400ms;
@@ -273,6 +255,7 @@ h1, h2, h3, h4, h5, h6 {
 
   &.belief {
     top: 3.0rem;
+    box-shadow: 0px 0px 8px @color-blue-light;
   }
 
   &.time {
