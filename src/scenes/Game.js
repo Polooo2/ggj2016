@@ -8,10 +8,10 @@ class Game extends Component {
     return (
       <Scene name="game">
         <ProgressBar className="belief" progress={100} />
-        <Button className="button-build" onClick={this.onBuild}>Defenses</Button>
-        <Button className="button-quests" onClick={this.onQuests}>Quests</Button>
-        <Button className="button-upgrades" onClick={this.onUpgrades}>Upgrades</Button>
-        <Button className="button-help" onClick={this.onHelp}>Help</Button>
+        <Button className="button-1" onClick={this.onBuild}>Defenses</Button>
+        <Button className="button-2" onClick={this.onQuests}>Quests</Button>
+        <Button className="button-3" onClick={this.onUpgrades}>Upgrades</Button>
+        <Button className="button-4" onClick={this.onHelp}>Help</Button>
         <ProgressBar className="time" progress={100} />
       </Scene>
     );

@@ -209,53 +209,14 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.bubble {
-  @width: 8.75rem;
-
-  width: @width;
-  position: absolute;
-  font-size: 1.1rem;
-
-  background-color: @color-blue-darker;
-  text-align: center;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  border-radius: 0.5rem;
-
-  text-shadow: 0px 0px 12px #222;
-  box-shadow: 0px 0px 8px #222;
-
-  &.bubble-row-1 {
-    left: @padding-default;
-    top: @padding-default;
-  }
-
-  &.bubble-row-2 {
-    left: @padding-default + @width + @padding-default;
-    top: @padding-default;
-  }
-
-  &.bubble-row-3 {
-    left: @padding-default + (@width + @padding-default) * 2;
-    top: @padding-default;
-  }
-
-  &.bubble-row-4 {
-    left: @padding-default + (@width + @padding-default) * 3;
-    top: @padding-default;
-  }
-
-  &.bubble-row-5 {
-    left: @padding-default + (@width + @padding-default) * 4;
-    top: @padding-default;
-  }
-}
-
 .button {
   position: absolute;
   font-size: 1.25rem;
   cursor: pointer;
   font-weight: bold;
+
+  width: 37.5%;
+  text-align: center;
 
   background-color: @color-olive-dark;
   border: 1px solid @color-olive-darker;
@@ -271,30 +232,24 @@ h1, h2, h3, h4, h5, h6 {
     background-color: lighten(@color-olive-dark, 10%);
   }
 
-  &.button-next {
-    bottom: 1.0rem;
-    right: 1.0rem;
+  &.button-1 {
+    left: 5%;
+    bottom: 7.5rem;
   }
 
-  &.button-build {
-    bottom: 1.0rem;
-    left: 1.0rem;
+  &.button-2 {
+    right: 5%;
+    bottom: 7.5rem;
   }
 
-  &.button-quests {
-    bottom: 1.0rem;
-    left: 9.0rem;
+  &.button-3 {
+    left: 5%;
+    bottom: 3.0rem;
   }
 
-  &.button-upgrades {
-    display: none;
-    bottom: 1.0rem;
-    left: 15.5rem;
-  }
-
-  &.button-help {
-    bottom: 1.0rem;
-    left: 15.5rem;
+  &.button-4 {
+    right: 5%;
+    bottom: 3.0rem;
   }
 }
 
@@ -302,7 +257,6 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   height: 1.0rem;
   width: 40rem;
-  top: 4.5rem;
   margin-left: 5rem;
 
   background-color: @color-blue-dark;
@@ -315,6 +269,14 @@ h1, h2, h3, h4, h5, h6 {
   .progress-bar-active {
     background-color: lighten(@color-blue-lighter, 30%);
     height: 100%;
+  }
+
+  &.belief {
+    top: 3.0rem;
+  }
+
+  &.time {
+    bottom: 1.25rem;
   }
 }
 
