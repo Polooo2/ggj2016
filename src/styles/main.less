@@ -1,0 +1,337 @@
+/* Imports */
+@import './fonts.less';
+@import './variables.less';
+
+/* Stiziles */
+
+html {
+  font-size: 100%;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+
+  user-select: none;
+}
+
+body {
+  font-family: 'Josefin Sans';
+
+  background: #f2f2f2;
+}
+
+h1, h2, h3, h4, .button {
+  font-family: 'Shadows Into Light', cursive;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+}
+
+/* main */
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color: #fff;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #fff;
+  opacity: 1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #fff;
+  opacity: 1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #fff;
+}
+
+#content {
+  width: 100%;
+  height: 100%;
+}
+
+.viewport {
+  background-image: linear-gradient(to bottom, @color-blue-light, @color-blue);
+  color: #fff;
+  box-shadow: 0px 0px 0.5rem #444;
+}
+
+.scene {
+  width: 100%;
+  height: 100%;
+
+  &.intro {
+    position: absolute;
+    left: 4rem;
+    top: 4rem;
+    bottom: 4rem;
+    right: 4rem;
+    width: inherit;
+    height: inherit;
+
+    .input-name {
+      margin-top: 0.5rem;
+      padding-right: 2rem;
+    }
+
+    .input-name, .button {
+      display: inline-block;
+    }
+  }
+
+  &.game {
+    background-image: linear-gradient(to bottom, darken(@color-blue-light, 5%), @color-blue-dark);
+  }
+}
+
+.game-object {
+  position: absolute;
+}
+
+.tower {
+  @width: 360px;
+  @height: 360px;
+
+  width: @width;
+  height: @height;
+
+  margin-left: @width * (-0.5);
+  margin-top: @height * (-0.5);
+
+  background-image: url('../images/tower.png');
+  background-size: contain;
+  position: absolute;
+
+  left: 50%;
+  top: 50% + 4rem;
+}
+
+.menu-container {
+  opacity: 1;
+  transition: opacity 400ms;
+
+  &.invisible {
+    opacity: 0;
+  }
+}
+
+.menu-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.menu {
+  @width: 540px;
+  @height: 360px;
+
+  position: absolute;
+  width: @width;
+  height: @height;
+  margin-left: @width * (-0.5);
+  margin-top: @height * (-0.5);
+
+  background-color: rgba(20, 20, 20, 0.8);
+
+  padding: @padding-default;
+
+  border-radius: 0.5rem;
+
+  top: 50%;
+  left: 50%;
+}
+
+.menu-inner {
+  height: 240px;
+  overflow-y: auto;
+  padding-right: 20px;
+}
+
+.menu-container.nextday {
+  .menu-inner {
+    pointer-events: none;
+  }
+}
+
+.menu-item {
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: border 400ms;
+  border-radius: @padding-default;
+  margin-bottom: @padding-default;
+
+  &:hover {
+    border: 1px solid @color-olive-light;
+  }
+
+  &.disabled {
+    opacity: 0.6;
+    pointer-events: none;
+  }
+}
+
+.menu-item-text {
+  /*width: 70%;*/
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-left: @padding-default;
+}
+
+.menu-item-costs {
+  margin-left: @padding-default;
+  padding-bottom: 0.5rem;
+}
+
+/*.menu-item-icon,*/ .menu-item-text {
+  display: inline-block;
+}
+
+.menu-item-icon {
+  width: 6.0rem;
+  height: 6.0rem;
+  display: none;
+}
+
+.input-name {
+  background-color: transparent;
+  border: 0;
+  font-size: 1.5rem;
+  font-family: 'Shadows Into Light';
+  outline: 0;
+
+  &:placeholder {
+    color: #f2f2f2;
+  }
+}
+
+.bubble {
+  @width: 8.75rem;
+
+  width: @width;
+  position: absolute;
+  font-size: 1.1rem;
+
+  background-color: @color-blue-darker;
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 0.5rem;
+
+  text-shadow: 0px 0px 12px #222;
+  box-shadow: 0px 0px 8px #222;
+
+  &.bubble-row-1 {
+    left: @padding-default;
+    top: @padding-default;
+  }
+
+  &.bubble-row-2 {
+    left: @padding-default + @width + @padding-default;
+    top: @padding-default;
+  }
+
+  &.bubble-row-3 {
+    left: @padding-default + (@width + @padding-default) * 2;
+    top: @padding-default;
+  }
+
+  &.bubble-row-4 {
+    left: @padding-default + (@width + @padding-default) * 3;
+    top: @padding-default;
+  }
+
+  &.bubble-row-5 {
+    left: @padding-default + (@width + @padding-default) * 4;
+    top: @padding-default;
+  }
+}
+
+.button {
+  position: absolute;
+  font-size: 1.25rem;
+  cursor: pointer;
+  font-weight: bold;
+
+  background-color: @color-olive-dark;
+  border: 1px solid @color-olive-darker;
+  padding: 0.75rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-radius: 0.5rem;
+  transition: all 400ms;
+  text-shadow: 0px 0px 12px #222;
+  box-shadow: 0px 0px 8px #222;
+
+  &:hover {
+    background-color: lighten(@color-olive-dark, 10%);
+  }
+
+  &.button-next {
+    bottom: 1.0rem;
+    right: 1.0rem;
+  }
+
+  &.button-build {
+    bottom: 1.0rem;
+    left: 1.0rem;
+  }
+
+  &.button-quests {
+    bottom: 1.0rem;
+    left: 9.0rem;
+  }
+
+  &.button-upgrades {
+    display: none;
+    bottom: 1.0rem;
+    left: 15.5rem;
+  }
+
+  &.button-help {
+    bottom: 1.0rem;
+    left: 15.5rem;
+  }
+}
+
+.progress-bar {
+  position: absolute;
+  height: 1.0rem;
+  width: 40rem;
+  top: 4.5rem;
+  margin-left: 5rem;
+
+  background-color: @color-blue-dark;
+  border: 1px solid @color-blue-darker;
+  border-radius: 0.75rem;
+  box-shadow: 0px 0px 8px #222;
+
+  overflow: hidden;
+
+  .progress-bar-active {
+    background-color: lighten(@color-blue-lighter, 30%);
+    height: 100%;
+  }
+}
+
+.credits {
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+  width: 180px;
+  height: 60px;
+  background-color: rgb(33, 33, 33);
+  opacity: 0.6;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 10px;
+  color: #fff;
+
+  .name {
+    height: 16px;
+  }
+}
