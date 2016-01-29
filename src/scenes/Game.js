@@ -17,7 +17,7 @@ class Game extends Component {
   getAvailableDecisions = () => {
     // TODO add believe
 
-    var availableDecisions = decisionNodes.filter(elem => elem.min < 20 < elem.max);
+    var availableDecisions = decisionNodes.filter(elem => elem.min < 20 && 20 < elem.max);
     return availableDecisions[Math.floor(Math.random()*availableDecisions.length)];
   };
 
