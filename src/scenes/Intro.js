@@ -9,12 +9,16 @@ class Intro extends Component {
     World.trigger('scene', 'Game');
   };
 
+  /*
+  <Scene name="intro">
+    <h2>Time traveled into ancient mayan times, oh yeah.</h2>
+    <Button onClick={this.switchToGame}>Continue</Button>
+  </Scene>
+  */
+
   render() {
     return (
-      <Scene name="intro">
-        <h2>Time traveled into ancient mayan times, oh yeah.</h2>
-        <Button onClick={this.switchToGame}>Continue</Button>
-      </Scene>
+      <div />
     );
   }
 }

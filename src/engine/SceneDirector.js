@@ -25,6 +25,8 @@ class SceneDirector extends Component {
     //var sceneName = (scene && scene[this.state.scene]) ? React.createElement(scene[this.state.scene]) : null;
 
     var sceneInstance = (() => {
+      console.log(Intro);
+
       switch (this.state.scene) {
         case 'Intro': return <Intro />;
         case 'Game': return <Game />;
