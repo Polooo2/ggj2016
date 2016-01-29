@@ -6,7 +6,9 @@ import { BackgroundImage, Button, ProgressBar, Text } from 'components';
 
 
 class Game extends Component {
-  constructor() {
+  constructor(props) {
+    super(props);
+
     this.state = {
       selectionVisible: true,
     };
@@ -18,12 +20,14 @@ class Game extends Component {
     var availableDecisions = decisionNodes.filter(elem => elem.min < 20 < elem.max);
     return availableDecisions[Math.floor(Math.random()*availableDecisions.length)];
   };
+
   selDecision = () => {
-    alert(1)
+    alert(1);
   };
+
   render() {
     const decisions = this.getAvailableDecisions().selection.map((dec, i) => {
-      return <Button className={`button-$(i)`} onClick={() => this.selDecision(dec.effect)}>{dec.text}</Button>
+      return <Button key={i} className={`button-$(i)`} onClick={() => this.selDecision(dec.effect)}>{dec.text}</Button>;
     });
 
     const textContainer = (() => {
@@ -42,9 +46,7 @@ class Game extends Component {
       <Scene name="game">
         <BackgroundImage src={background} />
         <ProgressBar className="belief" progress={100} caption="How much do I feel people trust me?" />
-        <div className="text-container">
-          {textContainer}
-        </div>
+        <div className="text-container">{textContainer}</div>
       </Scene>
     );
   }
