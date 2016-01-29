@@ -5,6 +5,7 @@
  * the subfolder /webpack-dev-server/ is visited. Visiting the root will not automatically reload.
  */
 'use strict';
+var path = require('path');
 var webpack = require('webpack');
 var autoprefixer = require('autoprefixer-core');
 
@@ -30,10 +31,7 @@ module.exports = {
 
   resolve: {
     extensions: ['', '.js', '.jsx'],
-    alias: {
-      'lib': __dirname + '/lib'
-    },
-    root: __dirname + '/src'
+    root: path.join(__dirname, '/src')
   },
   module: {
     preLoaders: [{
