@@ -26,7 +26,7 @@ class IntroSlide extends Component {
 
     if (this.state.buttonTyping) {
       button = (
-        <Typewriter typing={1}>
+        <Typewriter typing={3}>
           <Button onClick={this.props.onClick}>1. {this.props.button}</Button>
         </Typewriter>
       );
