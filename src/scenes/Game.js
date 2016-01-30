@@ -7,7 +7,7 @@ import consts from 'consts';
 
 import World from 'store/World';
 
-var belief = 20;
+var belief = consts.belief.init;
 
 class Game extends Component {
   constructor(props) {
@@ -65,10 +65,10 @@ class Game extends Component {
   selDecision = (effect) => {
     belief += effect;
     let text = '';
-    if (belief >= 100) {
+    if (belief >= consts.belief.max) {
       text = this.selectedDecision.effects.win;
       this.nextScene = 'Intro';
-    } else if (belief <= 0) {
+    } else if (belief <= consts.belief.min) {
       text = this.selectedDecision.effects.fail;
       this.nextScene = 'Intro';
     } else if (effect > 0) {
