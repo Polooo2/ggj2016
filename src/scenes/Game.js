@@ -3,7 +3,7 @@ import { background } from 'images';
 import { decisionNodes } from 'data';
 import Scene from './Scene';
 import { BackgroundImage, Button, ProgressBar, Text } from 'components';
-
+import consts from 'consts';
 
 class Game extends Component {
   constructor(props) {
@@ -11,8 +11,31 @@ class Game extends Component {
 
     this.state = {
       selectionVisible: true,
+      timer: consts.timer,
     };
   }
+
+  componentDidMount() {
+    this.startTimer();
+  }
+
+  startTimer = () => {
+    this.timerId = setInterval(() => {
+      this.setState({
+        timer: this.state.timer - 1,
+      });
+    }, 1000);
+  };
+
+  stopTimer = () => {
+    clearInterval(this.timerId);
+  };
+
+  resetTimer = () => {
+    this.setState({
+      timer: consts.timer,
+    });
+  };
 
   getAvailableDecisions = () => {
     // TODO add believe
@@ -36,7 +59,7 @@ class Game extends Component {
           <div>
             <Button className="text-area">{decisionNodes[0].intro}</Button>
             {decisions}
-            <ProgressBar className="time" progress={100} />
+            <ProgressBar className="time" progress={(this.state.timer / consts.timer) * 100} />
           </div>
         );
       }
