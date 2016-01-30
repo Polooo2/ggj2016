@@ -83,6 +83,11 @@ class Game extends Component {
       text = this.state.selectedDecision.noSelection.result;
     }
 
+    // fallback
+    if (text === '') {
+      text = 'Pedro de Alvarado charges in with his conquistadores cavalry, 180 horsemans strong. Swords fall down left and right, screams and blood are numbing you senses. <br/> You barely have the time to curse your dumb ideas when a sword finds your neck.';
+    }
+
     this.setState({
       selectedDecision: nextDecision,
       selectionVisible: false,
