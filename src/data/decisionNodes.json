@@ -65,17 +65,17 @@
     "intro": "After a perfect execusion of the bystander sidestep you find yourself a meer 10 meters from the Ritual Calendar",
     "effects": {
       "win": "",
-      "fail": "As you reach for it the warriors snap and takle you down, "
+      "fail": "As you reach for it the warriors snap and takle you down, they're tiny but strong, you won't get out of this. You reach for your Time Machine remote and press all the buttons. <br/> ... <br/> Damn, your remote broke. But where is this? Is this another planet? Weired plants you never saw are all around. An alien sound, somewhat similar to yawning fills the air, trembling you move a giant leaf out of the way and peek. <br/> Triceratops. "
     },
     "noSelection": {
-      "result": "You're just standing there awkwardly, they seem to nice something fishy is going on, but they can't really figure out what",
+      "result": "You're just standing there awkwardly, they seem to notice something fishy is going on, but they can't really figure out what",
       "effect": -10
     },
     "selection": [
       {
-        "text": "Smile and wave, prepare for the next sidestep",
+        "text": "Smile and wave, sidestep.",
         "effect": 10,
-        "result": "Smile and wave, slowly sidestep. Smile and wave, slowly slowly. Some of the kids start to wave at you, smiling, one is mirroring your sidesteps "
+        "result": "Smile and wave, slowly sidestep. Smile and wave, slowly slowly. Some of the kids start to wave at you, smiling. "
       },
       {
         "text": "Walk confidently towards the Ritual Calendar.",
@@ -87,25 +87,59 @@
   {
     "min": 61,
     "max": 90,
-    "intro": "After a perfect execusion of the bystander sidestep you find yourself a meer 10 meters from the Ritual Calendar",
+    "intro": "You're there, 5 meters from the Ritual Calendar. A drop of swet runs down your neck while you skreen the crowd, trying to repreciate the friendly and curious expressions you see on their faces.",
     "effects": {
-      "fail": "",
-      "win": "Yes, you reached the Ritual Calendar! You tweek the numbers real fast and warp back home. <br/> [...] <br/> Thinking back about that day you cannot help but being proud of yourself, you didn't just save the world, you made it better. After your return all the neo-nazis movements had changed: no futile hating on the jews anymore. Now they where focusing all of their efforts in the much nobler cause of eradicating the Swiss, those entitled moddafuckers. "
+      "win": "Yes, you reached the Ritual Calendar! You tweek the numbers real fast and warp back home. <br/> [...] <br/> Thinking back about that day you cannot help but being proud of yourself, you didn't just save the world, you made it better. After your return all the neo-nazis movements had changed: no futile hating on the jews anymore. Now they where focusing all of their efforts in the much nobler cause of eradicating the Swiss, those entitled moddafuckers. ",
+      "fail": ""
     },
     "noSelection": {
-      "result": "You're just standing there awkwardly, they seem to nice something fishy is going on, but they can't really figure out what",
+      "result": "You're just standing there awkwardly, they seem to notice something fishy is going on, but they can't really figure out what",
       "effect": -10
     },
     "selection": [
       {
-        "text": "Smile and wave, prepare for the next sidestep",
-        "effect": 10,
-        "result": "Smile and wave, slowly sidestep. Smile and wave, slowly slowly. Some of the kids start to wave at you, smiling, one is mirroring your sidesteps "
+        "text": "Get a panick attack",
+        "effect": -10,
+        "result": "Breathe, you can do this. You're almost there. Oh my god they can tell, they can definitely tell you're laying your arms weired. No! relax, you can do this. <br/> That skinny Mayan is not looking at you, he's looking inside you! He knows everything, he's gonna kill you! Oh my god you're gonna die! You won't ever see Gertrude again. <br/>... <br/> Gertrude. No! you need to sorldier on, breathe, you can do this."
       },
       {
-        "text": "Walk confidently towards the Ritual Calendar.",
-        "effect": 100
+        "text": "Tweek the Ritual Calendar.",
+        "effect": 100,
+        "result": ""
       }
     ]
+  },
+  {
+    "min": 0,
+    "max": 90,
+    "intro": "You spot a peacock hat moving through the crowd, everybody is making room for it's wearer, as he emerges from the crowd your heart bounces to your throat: It's definitely a priest, how you'll be judged will decide everything. ",
+    "effects": {
+      "win": "",
+      "fail": ""
+    },
+    "noSelection": {
+      "result": "",
+      "effect": null
+    },
+    "selection": [
+      {
+        "text": "Ask the audience",
+        "effect": null,
+        "result": ""
+      },
+      {
+        "text": "Call a Friend",
+        "effect": null
+      }
+    ]
+  },
+  {
+    "min": null,
+    "max": null,
+    "effects": {},
+    "noSelection": {
+      "effect": null
+    },
+    "selection": []
   }
 ]
