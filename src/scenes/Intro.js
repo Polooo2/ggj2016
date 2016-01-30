@@ -42,7 +42,7 @@ class Intro extends Component {
     return (
       <Scene name="intro">
         <Button onClick={this.switchToGame}>Continue</Button>
-        <div className="intro-slide-container">{introText}</div>
+        <div className="intro-slide-container" style={style}>{introText}</div>
         <img src={intro} />
         <br />
       </Scene>
