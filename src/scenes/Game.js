@@ -29,6 +29,10 @@ class Game extends Component {
     var availableDecisions = decisionNodes.filter((elem) => {
       return !elem.used && elem.min < belief && belief < elem.max;
     });
+    if (availableDecisions.length === 0) {
+      console.log('Couldnt find any unused nodes');
+      return null;
+    }
     const decisionNode = availableDecisions[Math.floor(Math.random() * availableDecisions.length)];
     // mark this decisionNode as used
     decisionNode.used = true;
@@ -42,6 +46,12 @@ class Game extends Component {
         resultText: '',
       });
     } else {
+      // reset belief
+      belief = consts.belief.init;
+      // reset decisions file
+      decisionNodes.forEach(function(elem, index) {
+        decisionNodes[index].used = false;
+      });
       World.trigger('scene', this.nextScene);
     }
   };
