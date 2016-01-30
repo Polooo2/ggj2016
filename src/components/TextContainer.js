@@ -6,7 +6,7 @@ class TextContainer extends Component {
   render() {
     if (this.props.selectionVisible) {
       const decisions = this.props.selectedDecision.selection.map((dec, i) => {
-        return <Button key={i} className={`button-$(i)`} onClick={() => this.props.selDecision(dec.effect)}>{i + 1}. {dec.text}</Button>;
+        return <Button key={i} className={`button-$(i)`} onClick={() => this.props.selDecision(dec.effect, false, i)}>{i + 1}. {dec.text}</Button>;
       });
       return (
         <div>

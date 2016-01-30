@@ -56,7 +56,7 @@ class Game extends Component {
     }
   };
 
-  selDecision = (effect, nothingDone) => {
+  selDecision = (effect, nothingDone, answer) => {
     belief += effect;
     let text = '';
     const nextDecision = this.getAvailableDecisions();
@@ -67,13 +67,15 @@ class Game extends Component {
     } else if (belief <= consts.belief.min || (nextDecision === null && belief <= 50)) {
       text = this.state.selectedDecision.effects.fail;
       this.nextScene = 'Intro';
-    } else if (effect > 0) {
-      text = this.state.selectedDecision.effects.pos;
-      this.nextScene = 'Game';
-    } else if (effect < 0) {
-      text = this.state.selectedDecision.effects.neg;
+    } else {
+      text = this.state.selectedDecision.selection[answer].result;
       this.nextScene = 'Game';
     }
+
+    if (nothingDone) {
+      text = this.state.selectedDecision.noSelection.result;
+    }
+
     this.setState({
       selectedDecision: nextDecision,
       selectionVisible: false,
