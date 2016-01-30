@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { background } from 'images';
 import { decisionNodes } from 'data';
 import Scene from './Scene';
-import { BackgroundImage, Button, ProgressBar, Text, TextContainer, Timer } from 'components';
+import { Button, ProgressBar, Text, TextContainer, Timer } from 'components';
 import consts from 'consts';
 
 import World from 'store/World';
@@ -107,7 +107,6 @@ class Game extends Component {
     };
     return (
       <Scene name="game">
-        <BackgroundImage src={background} />
         <ProgressBar className="belief" progress={belief} caption="How much do I feel people trust me?" />
         <div className="text-container">
           <TextContainer {...helperObj}/>
