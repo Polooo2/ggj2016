@@ -51,6 +51,18 @@ class Timer extends Component {
     }
   };
 
+  componentWillReceiveProps(nextProps) {
+    console.log('recieve update');
+    if (this.props.timerState !== nextProps.timerState) {
+      if (nextProps.timerState !== '') {
+        this.stopTimer();
+        this.resetTimer();
+      } else {
+        this.startTimer();
+      }
+    }
+  }
+
   render() {
     return (
       <ProgressBar className="time" progress={(this.state.timer / consts.timer) * 100} />
