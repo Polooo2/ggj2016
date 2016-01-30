@@ -128,8 +128,19 @@
         "result": ""
       },
       {
-        "text": "Call a Friend",
-        "effect": null
+        "text": "Call a friend",
+        "effect": null,
+        "result": "You take your smarter phone: \"Call, Gertrude\" <br/> Tuuut tuu- \"Hans, we're testing the Large Hardon Collider right now can you call me later?\" <br/>\"Actually, honey, I kind of went and did something stupid.\" <br/>\"...When?\" \"1524, Q"
+      },
+      {
+        "text": "50% - 50%",
+        "effect": null,
+        "result": ""
+      },
+      {
+        "text": "Jump a question",
+        "effect": 0,
+        "result": "/"
       }
     ]
   }
