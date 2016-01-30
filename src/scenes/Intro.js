@@ -38,11 +38,12 @@ class Intro extends Component {
 
       return (
         <IntroSlide
+          className={`intro-slide-${index}`}
           key={index}
           image={null}
           text={lines}
           isTyping={isTyping}
-          alignImage={(index % 2 === 0) ? 'left' : 'right'}
+          alignImage={(index === 3) ? 'left' : 'right'}
           button={slide.action}
           style={{ position: 'absolute', top: `${this.state.introState * 100}%` }}
           onClick={this.onContinue} />
