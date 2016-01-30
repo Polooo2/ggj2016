@@ -52,14 +52,19 @@ class Game extends Component {
   };
 
   getAvailableDecisions = () => {
-    // TODO add belief
-
     var availableDecisions = decisionNodes.filter(elem => elem.min < belief && belief < elem.max);
     return availableDecisions[Math.floor(Math.random() * availableDecisions.length)];
   };
 
   switchToGame = () => {
-    World.trigger('scene', this.nextScene);
+    if (this.nextScene === 'Game') {
+      this.setState({
+        selectionVisible: true,
+        resultText: '',
+      })
+    } else {
+      World.trigger('scene', this.nextScene);
+    }
   };
 
   selDecision = (effect) => {
@@ -86,6 +91,7 @@ class Game extends Component {
 
   render() {
     this.selectedDecision = this.getAvailableDecisions();
+    // TODO mark selected decisions to not be used again
     const decisions = this.selectedDecision.selection.map((dec, i) => {
       return <Button key={i} className={`button-$(i)`} onClick={() => this.selDecision(dec.effect)}>{i + 1}. {dec.text}</Button>;
     });
