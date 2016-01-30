@@ -15,9 +15,10 @@ class TextContainer extends Component {
         </div>
       );
     }
+    var text = this.props.resultText.split('<br/>').map(elem => <div>{elem}</div>);
     return (
       <div>
-        <Text className="text-area">{this.props.resultText}</Text>
+        <Text className="text-area">{text}</Text>
         <Button onClick={this.props.switchToGame}>{this.props.nextScene === 'Intro' ? 'Restart Game' : 'Continue'}</Button>
       </div>
     );
