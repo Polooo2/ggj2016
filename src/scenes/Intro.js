@@ -16,21 +16,33 @@ class Intro extends Component {
     };
   }
 
+  onContinue = () => {
+    this.setState({
+      introState: this.state.introState++,
+    });
+  };
+
   switchToGame = () => {
     World.trigger('scene', 'Game');
   };
 
   render() {
-    const introText = introduction.map(slide => {
-      const lines = slide.text.map((line, index) => <div key={index} className="line">{line}</div>);
+    const introText = introduction.map((slide, index) => {
+      const lines = slide.text.map((line, lineIndex) => <div key={lineIndex} className="line">{line}</div>);
 
-      return <IntroSlide text={lines} button={slide.action} />;
+      const isTyping = (this.state.introState === index);
+
+      return <IntroSlide image={null} text={lines} isTyping={isTyping} button={slide.action} onClick={this.onContinue} />;
     });
+
+    const style = {
+      transform: `transformY(${this.state.introState * (-200)}px)`,
+    };
 
     return (
       <Scene name="intro">
         <Button onClick={this.switchToGame}>Continue</Button>
-        {introText}
+        <div className="intro-slide-container">{introText}</div>
         <img src={intro} />
         <br />
       </Scene>
