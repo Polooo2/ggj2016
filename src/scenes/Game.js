@@ -28,6 +28,8 @@ class Game extends Component {
     this.timerId = setInterval(() => {
       this.setState({
         timer: this.state.timer - 1,
+      }, () => {
+        this.processTimer();
       });
     }, 1000);
   };
@@ -40,6 +42,13 @@ class Game extends Component {
     this.setState({
       timer: consts.timer,
     });
+  };
+
+  processTimer = () => {
+    if (this.state.timer <= 0) {
+      this.selDecision(5);
+      this.resetTimer();
+    }
   };
 
   getAvailableDecisions = () => {
