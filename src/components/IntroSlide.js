@@ -33,7 +33,7 @@ class IntroSlide extends Component {
     }
 
     return (
-      <div className={`intro-slide {this.props.className}`}>
+      <div className={`intro-slide ${this.props.className}`}>
         <img src={this.props.image} border={0} width={320} height={240} style={{ float: this.props.alignImage, marginRight: 16 }} />
         <div className="intro-slide-text">
           <Typewriter typing={~~this.props.isTyping} onTypingEnd={this.onTypingEnd}>{this.props.text}</Typewriter>
