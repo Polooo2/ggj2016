@@ -5,7 +5,6 @@ import { BackgroundImage, Button, ProgressBar, IntroSlide } from 'components';
 import World from 'store/World';
 
 import { introduction } from 'data';
-import { intro } from 'images';
 
 class Intro extends Component {
   constructor(props) {
@@ -28,6 +27,10 @@ class Intro extends Component {
 
   switchToGame = () => {
     World.trigger('scene', 'Game');
+  };
+
+  switchToCredits = () => {
+    World.trigger('scene', 'Credits');
   };
 
   render() {
@@ -57,6 +60,9 @@ class Intro extends Component {
     return (
       <Scene name="intro">
         <div className="intro-slide-container" style={style}>{introText}</div>
+        <div className="button-left">
+          <Button onClick={this.switchToCredits}>Credits</Button>
+        </div>
         <div className="button-right">
           <Button onClick={this.switchToGame}>Skip intro</Button>
         </div>
