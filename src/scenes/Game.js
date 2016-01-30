@@ -79,7 +79,7 @@ class Game extends Component {
       this.nextScene = 'Game';
     }
 
-    if (nothingDone) {
+    if (nothingDone || text === '') {
       text = this.state.selectedDecision.noSelection.result;
     }
 
