@@ -1,9 +1,32 @@
-[
-  "I just want to left alone in this old tower, where I made myself confortable.",
-  "There are a couple of things in my vampire existence that prevent my solitude:",
-  "1. I need blood to live.",
-  "2. Some villagers believe that unforseeable treasures are in my tower waiting to be taken. That is not the case of course, but I will need to prepare some defenses so that I will be left alone.",
-  "One of these days I need to make my peace with being a vampire, finding solitude and hurting people in my wake.",
-  "I know I'm breaking the forth wall here, but do you see the progress bar here?",
-  "Yes, the blue one. If it fills up, I finally found inner peace. If it drop downs to zero, I feel I might fall into some kind of rage that will consume me."
-]
+[{
+  "text": [
+    "It's the 27th of November 2009 and you are not happy.",
+    "The 11B of the Marie Curie Gymnasium is the hardest struggle you ever had to face in 63 years: Pfeiffer and Geiger are always on their phones, Baumann can't sit still for a second, Holzmeister and Jung are fighting all the time.",
+    "Nobody cares about History.",
+    "But, It's a Friday! A sweet disaster movie will surely ease everything up."
+  ],
+  "action": "Go watch \"2012\" with the sweet love of your life."
+}, {
+  "text": [
+    "That.",
+    "was.",
+    "scary.",
+    "Once back home you get in bed but you can't sleep, your head is filled with thoughts on the end of the world and the Mayan empire.",
+    "You know what you need to do.",
+    "First thing next morning you look around but cannot find them, gotta ask Gertrude:"
+  ],
+  "action": "\"Honey, where are the keys for the Time Machine?\""
+}, {
+  "text": [
+    "Gertrude: \"The Time Machine? Hans, are you tring to kill Hitler again?\"",
+    "You: \"NO! no, no, no. I really just only want to lay down on the american grasslands!\"",
+    "Gertrude: \"Uhm. I hid them in the Latin dictionary.\"",
+    "You: \"Thanks my dear\""
+  ],
+  "action": "Use the Time Machine and get back to the Mayan Empire"
+}, {
+  "text": [
+    "Here you are, in Q'umarkaj, ready to tweek the Mayan's Ritual Calendar and prevent a disaster in 2012! There's only a small issue, a perplexed crowd is looking at you sideways."
+  ],
+  "action": "Start"
+}]
