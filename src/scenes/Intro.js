@@ -43,7 +43,7 @@ class Intro extends Component {
 
       return (
         <IntroSlide
-          className={`intro-slide-${index}`}
+          className={`intro-slide-${index} ${(index === 3) ? 'short' : ''}`}
           key={index}
           image={images[`intro${index}`]}
           text={lines}
