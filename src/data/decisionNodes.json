@@ -1,63 +1,120 @@
 [
   {
-    "min": 0,
-    "max": 100,
-    "intro": "The crowd is looking at you full of expectation... ",
+    "min": 30,
+    "max": 50,
+    "intro": "A plump kid is approaching you warely, slowly sliding her left foot forward as she points a trebling stick towards your white socked, Crocs equiped feets.",
+    "effects": {
+      "win": "",
+      "fail": ""
+    },
+    "noSelection": {
+      "result": "A bright flash blinds you all. <br/> \"Hans, I told you not do anthing stupid didn't I?\" <br/> As you slowly regain vision you can see her standing with her harms crossed where the kid used to be, half of the poor thing is still in this reality spouting a fountain of blood, staining Gertrude's skirt. She grabs you by the ear and drags you back to your place. ",
+      "effect": -100
+    },
     "selection": [
       {
-        "text": "Wink and say hello?",
-        "effect": 10,
-        "result": "result 1"
+        "text": "Give her the \"You didn't do your homework!\" look",
+        "effect": 20,
+        "result": "The kid stops in her tracks, curiousity and fear quickly fade away from her face while regret and guilt inevitably take over. <br/> The \"you didn't do your homework\" look is never gonna fail you."
       },
       {
-        "text": "Start yelling uncomprehending stuff",
+        "text": "Smile",
+        "effect": -20,
+        "result": "The kid is poking your Crocs and you're ignoring her, smiling at the crowd with your puppy face. <br/> You recognize this scene, the Mayans are looking at you as those devilish students of the 11B did, on that horrible first day. They know it: you have no backbone."
+      },
+      {
+        "text": "Kick her",
         "effect": -10,
-        "result": "result 2"
-      },
-      {
-        "text": "Pull out our smartphone",
-        "effect": 30,
-        "result": "result 3"
+        "result": "The sticks flies while she runs away shouting. She hides behind what looks to be her father.<br/> He does not seem to like you."
       }
-    ],
-    "noSelection": {
-      "result": "no selection made",
-      "effect": 5
-    },
-    "effects": {
-      "pos": "The crowd warms to you and doesnt looks less threatening to you",
-      "neg": "You hear muffled shouting in the background. This doesnt seem to be good ..."
-    }
+    ]
   },
   {
-    "min": 0,
-    "max": 100,
-    "intro": "You see mixed feelings on the faces of the crowd. Some seem to praise you some are more skeptical ... ",
+    "min": 10,
+    "max": 40,
+    "intro": "Two warriors lower their spears. One almost makes a step.",
+    "effects": {
+      "win": "",
+      "fail": "As you reach for it the warriors freeze. <br/> You confidently raise your arm shouting \"Let it be FIRE!\" and ignite your lighter. <br/> One of them squeals like a castrated pig, fear deforming his face, as he shoves his spear into you. You grasp for air as your perforated lungs fail to be of any use."
+    },
+    "noSelection": {
+      "result": "Pedro de Alvarado charges in with his conquistadores cavalry, 180 horsemans strong. Swords fall down left and right, screams and blood are numbing you senses. <br/> You barely have the time to curse your dumb ideas when a sword finds your neck.",
+      "effect": -100
+    },
     "selection": [
       {
-        "text": "Use your lighter to ignite a build?",
+        "text": "Take out your lighter",
+        "effect": -40,
+        "result": ""
+      },
+      {
+        "text": "Take out your unreasonably massive boombox.",
         "effect": 50,
-        "result": "result 1"
+        "result": "Skrillex. <br/> <br/> They certainly where not expecting Skrillex. <br/> Some fall on the floor covering their hears, some run in circles crying in despair, 5 of them engage in an experimental expressive dance, a metaphor of the human condition. Emotions run wilde within you, you're being touched where no dancing performance ever reached before. You're compelled to join them and dance 'till the battery lasts."
       },
       {
-        "text": "Grab the golden mask from the altar",
-        "effect": 100,
-        "result": "result 2"
-      },
-      {
-        "text": "Go back to the future",
-        "effect": -100,
-        "result": "result 3"
+        "text": "Cry like a baby.",
+        "effect": 10,
+        "result": "The warriors faces resemble a question mark as they cross each other's eyes. After a brief moment they drop their spears and start laughting their asses off."
       }
-    ],
-    "noSelection": {
-      "result": "no selection made",
-      "effect": 5
-    },
+    ]
+  },
+  {
+    "min": 40,
+    "max": 60,
+    "intro": "After a perfect execusion of the bystander sidestep you find yourself a meer 10 meters from the Ritual Calendar",
     "effects": {
-      "pos": "Sth happens",
-      "fail": "You return empty handed to your time",
-      "win": "You grab the mask, turn on your timemachine and return as a will-be-rich man"
-    }
+      "win": "",
+      "fail": "As you reach for it the warriors snap and takle you down, "
+    },
+    "noSelection": {
+      "result": "You're just standing there awkwardly, they seem to nice something fishy is going on, but they can't really figure out what",
+      "effect": -10
+    },
+    "selection": [
+      {
+        "text": "Smile and wave, prepare for the next sidestep",
+        "effect": 10,
+        "result": "Smile and wave, slowly sidestep. Smile and wave, slowly slowly. Some of the kids start to wave at you, smiling, one is mirroring your sidesteps "
+      },
+      {
+        "text": "Walk confidently towards the Ritual Calendar.",
+        "effect": -100,
+        "result": ""
+      }
+    ]
+  },
+  {
+    "min": 61,
+    "max": 90,
+    "intro": "After a perfect execusion of the bystander sidestep you find yourself a meer 10 meters from the Ritual Calendar",
+    "effects": {
+      "win": "",
+      "fail": "Yes, you reached the Ritual Calendar! You tweek the numbers real fast and warp back home. <br/> [...] <br/> Thinking back about that day you cannot help but being proud of yourself, you didn't just save the world, you made it better. After your return all the neo-nazis movements had changed: no futile hating on the jews anymore. Now they where focusing all of their efforts in the much nobler cause of eradicating the Swiss, those entitled moddafuckers. "
+    },
+    "noSelection": {
+      "result": "You're just standing there awkwardly, they seem to nice something fishy is going on, but they can't really figure out what",
+      "effect": -10
+    },
+    "selection": [
+      {
+        "text": "Smile and wave, prepare for the next sidestep",
+        "effect": 10,
+        "result": "Smile and wave, slowly sidestep. Smile and wave, slowly slowly. Some of the kids start to wave at you, smiling, one is mirroring your sidesteps "
+      },
+      {
+        "text": "Walk confidently towards the Ritual Calendar.",
+        "effect": 100
+      }
+    ]
+  },
+  {
+    "min": null,
+    "max": null,
+    "effects": {},
+    "noSelection": {
+      "effect": null
+    },
+    "selection": []
   }
 ]
