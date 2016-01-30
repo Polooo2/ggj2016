@@ -16,7 +16,7 @@ class Game extends Component {
     this.state = {
       selectionVisible: true,
       timer: consts.timer,
-      resultText: ''
+      resultText: '',
     };
   }
 
@@ -61,7 +61,7 @@ class Game extends Component {
       this.setState({
         selectionVisible: true,
         resultText: '',
-      })
+      });
     } else {
       World.trigger('scene', this.nextScene);
     }
@@ -86,7 +86,7 @@ class Game extends Component {
     this.setState({
       selectionVisible: false,
       resultText: text,
-    })
+    });
   };
 
   render() {
