@@ -15,6 +15,7 @@ class TextContainer extends Component {
         </div>
       );
     }
+    // replace br/ tag behavior with divs
     var text = this.props.resultText.split('<br/>').map(elem => <div>{elem}</div>);
     return (
       <div>
