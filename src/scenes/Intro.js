@@ -4,6 +4,8 @@ import Scene from './Scene';
 import { BackgroundImage, Button, ProgressBar, IntroSlide } from 'components';
 import World from 'store/World';
 
+import images from 'images';
+
 import { introduction } from 'data';
 
 class Intro extends Component {
@@ -43,7 +45,7 @@ class Intro extends Component {
         <IntroSlide
           className={`intro-slide-${index}`}
           key={index}
-          image={null}
+          image={images[`intro${index}`]}
           text={lines}
           isTyping={isTyping}
           alignImage={(index === 2) ? 'left' : 'right'}
