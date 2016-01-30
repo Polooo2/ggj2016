@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Button from './Button';
 import Text from './Text';
+import TypedText from './TypedText';
 
 class TextContainer extends Component {
   render() {
@@ -19,8 +20,8 @@ class TextContainer extends Component {
     var text = (this.props.resultText || '').split('<br/>').map(elem => <div>{elem}</div>);
     return (
       <div>
-        <Text className="text-area">{text}</Text>
-        <Button onClick={this.props.switchToGame}>{this.props.nextScene === 'Intro' ? 'Restart Game' : 'Continue'}</Button>
+        <TypedText><Text className="text-area">{text}</Text></TypedText>
+        <Button className="button-right" onClick={this.props.switchToGame}>{this.props.nextScene === 'Intro' ? 'Restart Game' : 'Continue'}</Button>
       </div>
     );
   }
