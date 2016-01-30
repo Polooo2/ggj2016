@@ -17,7 +17,7 @@ class Game extends Component {
       selectionVisible: true,
       selectedDecision: this.getAvailableDecisions(),
       timer: consts.timer,
-      resultText: '',
+      resultText: null,
     };
   }
 
@@ -43,7 +43,7 @@ class Game extends Component {
     if (this.nextScene === 'Game') {
       this.setState({
         selectionVisible: true,
-        resultText: '',
+        resultText: null,
       });
     } else {
       // reset belief
