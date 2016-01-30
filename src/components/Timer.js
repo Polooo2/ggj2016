@@ -66,8 +66,14 @@ class Timer extends Component {
   }
 
   render() {
+    let className = 'time';
+
+    if (this.state.timer <= 5) {
+      className += ' animated infinite flash';
+    }
+
     return (
-      <ProgressBar className="time" progress={(this.state.timer / consts.timer) * 100} />
+      <ProgressBar className={className} progress={(this.state.timer / consts.timer) * 100} />
     );
   }
 }
