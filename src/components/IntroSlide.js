@@ -5,6 +5,7 @@ import Typewriter from 'react-typewriter';
 class IntroSlide extends Component {
   static defaultProps = {
     alignImage: 'left',
+    className: '',
   };
 
   constructor(props) {
