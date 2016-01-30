@@ -34,7 +34,10 @@ module.exports = {
 
   resolve: {
     extensions: ['', '.js', '.jsx'],
-    root: path.join(__dirname, '/src')
+    alias: {
+      'react-typewriter': path.join(__dirname, 'lib', 'react-typewriter')
+    },
+    root: path.join(__dirname, 'src')
   },
 
   module: {
