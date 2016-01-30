@@ -27,7 +27,7 @@ class Game extends Component {
 
   render() {
     const decisions = this.getAvailableDecisions().selection.map((dec, i) => {
-      return <Button key={i} className={`button-$(i)`} onClick={() => this.selDecision(dec.effect)}>{dec.text}</Button>;
+      return <Button key={i} className={`button-$(i)`} onClick={() => this.selDecision(dec.effect)}>{i + 1}. {dec.text}</Button>;
     });
 
     const textContainer = (() => {
