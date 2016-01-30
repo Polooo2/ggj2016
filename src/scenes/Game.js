@@ -77,7 +77,8 @@ class Game extends Component {
       selectionVisible,
       resultText,
       selectedDecision,
-      selDecision: this.selDecision
+      selDecision: this.selDecision,
+      switchToGame: this.switchToGame,
     };
     return (
       <Scene name="game">
