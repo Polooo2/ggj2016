@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { background } from 'images';
 import { decisionNodes } from 'data';
 import Scene from './Scene';
-import { BackgroundImage, Button, ProgressBar, Text } from 'components';
+import { BackgroundImage, Button, ProgressBar, Text, TextContainer, Timer } from 'components';
 import consts from 'consts';
 
 import World from 'store/World';
@@ -20,37 +20,6 @@ class Game extends Component {
       resultText: '',
     };
   }
-
-  componentDidMount() {
-    this.startTimer();
-  }
-
-  startTimer = () => {
-    this.timerId = setInterval(() => {
-      this.setState({
-        timer: this.state.timer - 1,
-      }, () => {
-        this.processTimer();
-      });
-    }, 1000);
-  };
-
-  stopTimer = () => {
-    clearInterval(this.timerId);
-  };
-
-  resetTimer = () => {
-    this.setState({
-      timer: consts.timer,
-    });
-  };
-
-  processTimer = () => {
-    if (this.state.timer <= 0) {
-      this.selDecision(this.selectedDecision.noSelection.effect, true);
-      this.resetTimer();
-    }
-  };
 
   /**
    * Select, return a decision node and mark it as used
@@ -112,8 +81,9 @@ class Game extends Component {
       <Scene name="game">
         <BackgroundImage src={background} />
         <ProgressBar className="belief" progress={belief} caption="How much do I feel people trust me?" />
-        <div className="text-container">{textContainer}
-          <TextContainer selectionVisible={this.nextScene}></TextContainer>
+        <div className="text-container">
+          <TextContainer selectionVisible={this.nextScene}>.</TextContainer>
+          <Timer onTimeUp={() => this.selDecision(this.selectedDecision.noSelection.effect, true)} />
         </div>
       </Scene>
     );
