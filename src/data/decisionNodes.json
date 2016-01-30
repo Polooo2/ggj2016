@@ -115,7 +115,7 @@
     "intro": "You spot a peacock hat moving through the crowd, everybody is making room for it's wearer, as he emerges from the crowd your heart bounces to your throat: It's definitely a priest, how you'll be judged will decide everything. ",
     "effects": {
       "win": "",
-      "fail": ""
+      "fail": "You take your smarter phone: \"Call, Gertrude\" <br/> Tuuut tuu- \"Hans, we're testing the Large Hardon Collider right now, can you call me later?\" <br/>\"Actually... ehm honey, I kind of went and did something stupid.\" <br/>\"...When?\" \"1524, Q'umarkaj I-\" Tuuu... A flash blinds you all, as you're slowly regaining your sight you can barely figure out her shape. She grabs your arm, you're saved. <br/> Dammit, you managed to screw up again, this time she's definitly gonna hide your Nutella for at least a month."
     },
     "noSelection": {
       "result": "",
@@ -124,18 +124,18 @@
     "selection": [
       {
         "text": "Ask the audience",
-        "effect": null,
-        "result": ""
+        "effect": -20,
+        "result": "\"Citizens of Q'umarkaj, I come from the future. I need to tweek the Ritual Calendar or everybody in my timeline will die! Can I tweek it? Preatty please?\" <br/> The crowd looks confused. "
       },
       {
         "text": "Call a friend",
-        "effect": null,
-        "result": "You take your smarter phone: \"Call, Gertrude\" <br/> Tuuut tuu- \"Hans, we're testing the Large Hardon Collider right now can you call me later?\" <br/>\"Actually, honey, I kind of went and did something stupid.\" <br/>\"...When?\" \"1524, Q"
+        "effect": -100,
+        "result": ""
       },
       {
-        "text": "50% - 50%",
-        "effect": null,
-        "result": ""
+        "text": "50/50",
+        "effect": 50,
+        "result": "You take all the medallions, necklaces and earrings from the crowd and split them 50/50 with the priest. He likes your style."
       },
       {
         "text": "Jump a question",
