@@ -52,12 +52,14 @@ class Timer extends Component {
   };
 
   componentWillReceiveProps(nextProps) {
-    console.log('recieve update');
     if (this.props.timerState !== nextProps.timerState) {
+      console.log('timetState changed');
       if (nextProps.timerState !== '') {
+        console.log('stopping timer');
         this.stopTimer();
         this.resetTimer();
       } else {
+        console.log('starting timer');
         this.startTimer();
       }
     }

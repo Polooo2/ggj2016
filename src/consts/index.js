@@ -3,6 +3,6 @@ export default {
   belief: {
     max: 100,
     min: 0,
-    init: 20
+    init: 30
   },
 };

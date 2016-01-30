@@ -27,7 +27,7 @@ class Game extends Component {
    */
   getAvailableDecisions = () => {
     var availableDecisions = decisionNodes.filter((elem) => {
-      return !elem.used && elem.min < belief && belief < elem.max;
+      return !elem.used && elem.min <= belief && belief <= elem.max;
     });
     if (availableDecisions.length === 0) {
       console.log('Couldnt find any unused nodes');
@@ -65,6 +65,7 @@ class Game extends Component {
   selDecision = (effect, nothingDone, answer) => {
     belief += effect;
     let text = '';
+    console.log('selDecisions', decisionNodes);
     const nextDecision = this.getAvailableDecisions();
 
     if (belief >= consts.belief.max || (nextDecision === null && belief > 50)) {

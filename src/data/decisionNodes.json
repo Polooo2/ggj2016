@@ -89,8 +89,8 @@
     "max": 90,
     "intro": "After a perfect execusion of the bystander sidestep you find yourself a meer 10 meters from the Ritual Calendar",
     "effects": {
-      "win": "",
-      "fail": "Yes, you reached the Ritual Calendar! You tweek the numbers real fast and warp back home. <br/> [...] <br/> Thinking back about that day you cannot help but being proud of yourself, you didn't just save the world, you made it better. After your return all the neo-nazis movements had changed: no futile hating on the jews anymore. Now they where focusing all of their efforts in the much nobler cause of eradicating the Swiss, those entitled moddafuckers. "
+      "fail": "",
+      "win": "Yes, you reached the Ritual Calendar! You tweek the numbers real fast and warp back home. <br/> [...] <br/> Thinking back about that day you cannot help but being proud of yourself, you didn't just save the world, you made it better. After your return all the neo-nazis movements had changed: no futile hating on the jews anymore. Now they where focusing all of their efforts in the much nobler cause of eradicating the Swiss, those entitled moddafuckers. "
     },
     "noSelection": {
       "result": "You're just standing there awkwardly, they seem to nice something fishy is going on, but they can't really figure out what",
@@ -107,14 +107,5 @@
         "effect": 100
       }
     ]
-  },
-  {
-    "min": null,
-    "max": null,
-    "effects": {},
-    "noSelection": {
-      "effect": null
-    },
-    "selection": []
   }
 ]
