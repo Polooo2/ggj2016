@@ -18,7 +18,7 @@ class TextContainer extends Component {
     return (
       <div>
         <Text className="text-area">{this.props.resultText}</Text>
-        <Button onClick={this.props.switchToGame}>Continue</Button>
+        <Button onClick={this.props.switchToGame}>{this.props.nextScene === 'Intro' ? 'Restart Game' : 'Continue'}</Button>
       </div>
     );
   }
