@@ -1,6 +1,6 @@
 import World from 'store/World';
-import React, {Component} from 'react';
-import {Game, Intro, GameWon, GameLost} from 'scenes';
+import React, { Component } from 'react';
+import { Game, Intro, GameWon, GameLost } from 'scenes';
 
 class SceneDirector extends Component {
   constructor(props) {
@@ -13,7 +13,7 @@ class SceneDirector extends Component {
 
   componentDidMount() {
     World.on('scene', sceneName => {
-      this.setState({scene: sceneName});
+      this.setState({ scene: sceneName });
     });
   }
 
@@ -22,9 +22,9 @@ class SceneDirector extends Component {
       return null;
     }
 
-    //var sceneName = (scene && scene[this.state.scene]) ? React.createElement(scene[this.state.scene]) : null;
+    // var sceneName = (scene && scene[this.state.scene]) ? React.createElement(scene[this.state.scene]) : null;
 
-    var sceneInstance = (() => {
+    const sceneInstance = (() => {
       switch (this.state.scene) {
         case 'Intro': return <Intro />;
         case 'Game': return <Game />;
@@ -34,9 +34,9 @@ class SceneDirector extends Component {
       }
     })();
 
-    var style = {
-      //width: '100%',
-      //height: '100%',
+    const style = {
+      // width: '100%',
+      // height: '100%',
     };
 
     return (
