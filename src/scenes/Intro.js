@@ -18,7 +18,7 @@ class Intro extends Component {
 
   onContinue = () => {
     this.setState({
-      introState: this.state.introState++,
+      introState: this.state.introState + 1,
     });
   };
 
@@ -36,7 +36,7 @@ class Intro extends Component {
     });
 
     const style = {
-      transform: `transformY(${this.state.introState * (-200)}px)`,
+      transform: `translateY(${this.state.introState * (-100)}%)`,
     };
 
     return (
