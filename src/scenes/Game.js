@@ -52,37 +52,39 @@ class Game extends Component {
     const nextDecision = this.getAvailableDecisions();
 
     if (belief >= consts.belief.max || (nextDecision === null && belief > 50)) {
-      text = this.selectedDecision.effects.win;
+      text = this.state.selectedDecision.effects.win;
       this.nextScene = 'Intro';
     } else if (belief <= consts.belief.min || (nextDecision === null && belief <= 50)) {
-      text = this.selectedDecision.effects.fail;
+      text = this.state.selectedDecision.effects.fail;
       this.nextScene = 'Intro';
     } else if (effect > 0) {
-      text = this.selectedDecision.effects.pos;
+      text = this.state.selectedDecision.effects.pos;
       this.nextScene = 'Game';
     } else if (effect < 0) {
-      text = this.selectedDecision.effects.neg;
+      text = this.state.selectedDecision.effects.neg;
       this.nextScene = 'Game';
     }
     this.setState({
+      selectedDecision: nextDecision,
       selectionVisible: false,
       resultText: text,
     });
   };
 
   render() {
-    this.selectedDecision = this.getAvailableDecisions();
-    // TODO mark selected decisions to not be used again
-    const decisions = this.selectedDecision.selection.map((dec, i) => {
-      return <Button key={i} className={`button-$(i)`} onClick={() => this.selDecision(dec.effect)}>{i + 1}. {dec.text}</Button>;
-    });
-
+    const {selectionVisible, resultText, selectedDecision} = this.state;
+    const helperObj = {
+      selectionVisible,
+      resultText,
+      selectedDecision,
+      selDecision: this.selDecision
+    };
     return (
       <Scene name="game">
         <BackgroundImage src={background} />
         <ProgressBar className="belief" progress={belief} caption="How much do I feel people trust me?" />
         <div className="text-container">
-          <TextContainer selectionVisible={this.nextScene}>.</TextContainer>
+          <TextContainer {...helperObj}/>
           <Timer onTimeUp={() => this.selDecision(this.state.selectedDecision.noSelection.effect, true)} timerState={this.state.resultText}/>
         </div>
       </Scene>
