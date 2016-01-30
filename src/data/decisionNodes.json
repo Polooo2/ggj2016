@@ -132,14 +132,5 @@
         "effect": null
       }
     ]
-  },
-  {
-    "min": null,
-    "max": null,
-    "effects": {},
-    "noSelection": {
-      "effect": null
-    },
-    "selection": []
   }
 ]
