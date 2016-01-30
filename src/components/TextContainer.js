@@ -12,6 +12,19 @@ class TextContainer extends Component {
     }
   }
 
+  componentDidMount() {
+    // This seems to be off by one
+    /*document.addEventListener('keyup', e => {
+      const keyCode = e.keyCode || e.which;
+
+      if (keyCode >= 49 && keyCode <= 57) {
+        const normalizedKey = keyCode - 47;
+
+        this.props.selDecision(this.props.selectedDecision.selection[normalizedKey], false, normalizedKey);
+      }
+    }, true);*/
+  }
+
   onTypingDone = () => {
     this.setState({
       showDecisions: true,
