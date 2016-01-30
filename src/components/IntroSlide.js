@@ -37,9 +37,11 @@ class IntroSlide extends Component {
       imageStyle.marginRight = 16;
     }
 
+    const image = (this.props.image) ? <img src={this.props.image} border={0} width={320} height={240} style={imageStyle} /> : null;
+
     return (
       <div className={`intro-slide ${this.props.className}`} style={this.props.style}>
-        <img src={this.props.image} border={0} width={320} height={240} style={imageStyle} />
+        {image}
         <div className="intro-slide-text">
           <TypedText onTypingDone={this.onTypingEnd}>{this.props.text}</TypedText>
         </div>
