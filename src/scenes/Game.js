@@ -15,6 +15,7 @@ class Game extends Component {
 
     this.state = {
       selectionVisible: true,
+      selectedDecision: this.getAvailableDecisions(),
       timer: consts.timer,
       resultText: '',
     };
@@ -46,14 +47,23 @@ class Game extends Component {
 
   processTimer = () => {
     if (this.state.timer <= 0) {
-      this.selDecision(5);
+      this.selDecision(this.selectedDecision.noSelection.effect, true);
       this.resetTimer();
     }
   };
 
+  /**
+   * Select, return a decision node and mark it as used
+   * @returns {*}
+   */
   getAvailableDecisions = () => {
-    var availableDecisions = decisionNodes.filter(elem => elem.min < belief && belief < elem.max);
-    return availableDecisions[Math.floor(Math.random() * availableDecisions.length)];
+    var availableDecisions = decisionNodes.filter((elem) => {
+      return !elem.used && elem.min < belief && belief < elem.max;
+    });
+    const decisionNode = availableDecisions[Math.floor(Math.random() * availableDecisions.length)];
+    // mark this decisionNode as used
+    decisionNode.used = true;
+    return decisionNode;
   };
 
   switchToGame = () => {
@@ -67,13 +77,15 @@ class Game extends Component {
     }
   };
 
-  selDecision = (effect) => {
+  selDecision = (effect, nothingDone) => {
     belief += effect;
     let text = '';
-    if (belief >= consts.belief.max) {
+    const nextDecision = this.getAvailableDecisions();
+
+    if (belief >= consts.belief.max || (nextDecision === null && belief > 50)) {
       text = this.selectedDecision.effects.win;
       this.nextScene = 'Intro';
-    } else if (belief <= consts.belief.min) {
+    } else if (belief <= consts.belief.min || (nextDecision === null && belief <= 50)) {
       text = this.selectedDecision.effects.fail;
       this.nextScene = 'Intro';
     } else if (effect > 0) {
@@ -96,30 +108,13 @@ class Game extends Component {
       return <Button key={i} className={`button-$(i)`} onClick={() => this.selDecision(dec.effect)}>{i + 1}. {dec.text}</Button>;
     });
 
-    const textContainer = (() => {
-      if (this.state.selectionVisible) {
-        return (
-          <div>
-            <Button className="text-area">{decisionNodes[0].intro}</Button>
-            {decisions}
-            <ProgressBar className="time" progress={(this.state.timer / consts.timer) * 100} />
-          </div>
-        );
-      } else {
-        return (
-          <div>
-            <Text className="text-area">{this.state.resultText}</Text>
-            <Button onClick={this.switchToGame}>Continue</Button>
-          </div>
-        );
-      }
-    })();
-
     return (
       <Scene name="game">
         <BackgroundImage src={background} />
         <ProgressBar className="belief" progress={belief} caption="How much do I feel people trust me?" />
-        <div className="text-container">{textContainer}</div>
+        <div className="text-container">{textContainer}
+          <TextContainer selectionVisible={this.nextScene}></TextContainer>
+        </div>
       </Scene>
     );
   }
