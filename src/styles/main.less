@@ -366,3 +366,12 @@ img, .image {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
+
+.decision-container {
+  transition: opacity 800ms;
+  opacity: 0;
+
+  &.show {
+    opacity: 1;
+  }
+}

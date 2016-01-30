@@ -27,16 +27,6 @@ class IntroSlide extends Component {
       return null;
     }
 
-    let button = null;
-
-    if (this.state.buttonTyping) {
-      button = (
-        <TypedText>
-          <Button onClick={this.props.onClick}>1. {this.props.button}</Button>
-        </TypedText>
-      );
-    }
-
     const imageStyle = {
       float: this.props.alignImage,
     };
@@ -53,7 +43,9 @@ class IntroSlide extends Component {
         <div className="intro-slide-text">
           <TypedText onTypingDone={this.onTypingEnd}>{this.props.text}</TypedText>
         </div>
-        {button}
+        <div className={`decision-container ${(this.state.buttonTyping) ? 'show' : ''}`}>
+          <Button onClick={this.props.onClick}>1. {this.props.button}</Button>
+        </div>
       </div>
     );
   }
