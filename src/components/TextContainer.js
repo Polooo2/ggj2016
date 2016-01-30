@@ -10,13 +10,13 @@ class TextContainer extends Component {
       });
       return (
         <div>
-          <Button className="text-area">{this.props.selectedDecision.intro}</Button>
+          <Text className="text-area">{this.props.selectedDecision.intro}</Text>
           {decisions}
         </div>
       );
     }
     // replace br/ tag behavior with divs
-    var text = this.props.resultText.split('<br/>').map(elem => <div>{elem}</div>);
+    var text = (this.props.resultText || '').split('<br/>').map(elem => <div>{elem}</div>);
     return (
       <div>
         <Text className="text-area">{text}</Text>
