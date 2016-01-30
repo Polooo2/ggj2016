@@ -1,17 +1,19 @@
 import React, { Component } from 'react';
 
 import Scene from './Scene';
-import { BackgroundImage, Button, ProgressBar } from 'components';
+import { BackgroundImage, Button, ProgressBar, IntroSlide } from 'components';
 import World from 'store/World';
 
 import { introduction } from 'data';
 import { intro } from 'images';
 
 class Intro extends Component {
-  constructor() {
+  constructor(props) {
+    super(props);
+
     this.state = {
       introState: 0
-    }
+    };
   }
 
   switchToGame = () => {
@@ -19,9 +21,15 @@ class Intro extends Component {
   };
 
   render() {
+    const introText = introduction.map(slide => {
+      const lines = slide.text.map(line => <div className="line">{line}</div>);
+
+      return <IntroSlide text={lines} button={slide.action} />;
+    });
+
     return (
       <Scene name="intro">
-        <h2>Time traveled into ancient mayan times, oh yeah.</h2>
+        {introText}
         <img src={intro} />
         <br />
         <Button onClick={this.switchToGame}>Continue</Button>
