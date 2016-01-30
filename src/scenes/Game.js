@@ -56,6 +56,12 @@ class Game extends Component {
     }
   };
 
+  /**
+   * Based on the action select a reaction and consequences
+   * @param effect
+   * @param nothingDone
+   * @param answer
+     */
   selDecision = (effect, nothingDone, answer) => {
     belief += effect;
     let text = '';
