@@ -3,7 +3,7 @@ import React, { Component, PropTypes } from 'react';
 class Scene extends Component {
   static propTypes = {
     name: PropTypes.string,
-    children: PropTypes.children,
+    children: PropTypes.node,
   };
 
   render() {
