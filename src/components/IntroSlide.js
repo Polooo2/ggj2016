@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Button from './Button';
-import Typewriter from 'react-typewriter';
+import TypedText from './TypedText';
 
 class IntroSlide extends Component {
   static defaultProps = {
@@ -23,21 +23,35 @@ class IntroSlide extends Component {
   };
 
   render() {
+    if (!this.props.isTyping) {
+      return null;
+    }
+
     let button = null;
 
     if (this.state.buttonTyping) {
       button = (
-        <Typewriter typing={3}>
+        <TypedText>
           <Button onClick={this.props.onClick}>1. {this.props.button}</Button>
-        </Typewriter>
+        </TypedText>
       );
     }
 
+    const imageStyle = {
+      float: this.props.alignImage,
+    };
+
+    if (this.props.alignImage === 'right') {
+      imageStyle.marginLeft = 16;
+    } else {
+      imageStyle.marginRight = 16;
+    }
+
     return (
-      <div className={`intro-slide ${this.props.className}`}>
-        <img src={this.props.image} border={0} width={320} height={240} style={{ float: this.props.alignImage, marginRight: 16 }} />
+      <div className={`intro-slide ${this.props.className}`} style={this.props.style}>
+        <img src={this.props.image} border={0} width={320} height={240} style={imageStyle} />
         <div className="intro-slide-text">
-          <Typewriter typing={~~this.props.isTyping} onTypingEnd={this.onTypingEnd}>{this.props.text}</Typewriter>
+          <TypedText onTypingDone={this.onTypingEnd}>{this.props.text}</TypedText>
         </div>
         {button}
       </div>

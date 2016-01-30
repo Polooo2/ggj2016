@@ -19,6 +19,10 @@ class Intro extends Component {
   onContinue = () => {
     this.setState({
       introState: this.state.introState + 1,
+    }, () => {
+      if (this.state.introState === introduction.length) {
+        World.trigger('scene', 'Game');
+      }
     });
   };
 
@@ -32,7 +36,17 @@ class Intro extends Component {
 
       const isTyping = (this.state.introState === index);
 
-      return <IntroSlide image={null} text={lines} isTyping={isTyping} button={slide.action} onClick={this.onContinue} />;
+      return (
+        <IntroSlide
+          key={index}
+          image={null}
+          text={lines}
+          isTyping={isTyping}
+          alignImage={(index % 2 === 0) ? 'left' : 'right'}
+          button={slide.action}
+          style={{ position: 'absolute', top: `${this.state.introState * 100}%` }}
+          onClick={this.onContinue} />
+      );
     });
 
     const style = {
@@ -41,10 +55,7 @@ class Intro extends Component {
 
     return (
       <Scene name="intro">
-        <Button onClick={this.switchToGame}>Continue</Button>
         <div className="intro-slide-container" style={style}>{introText}</div>
-        <img src={intro} />
-        <br />
       </Scene>
     );
   }
