@@ -45,7 +45,7 @@ class Game extends Component {
     return (
       <Scene name="game">
         <BackgroundImage src={background} />
-        <ProgressBar className="belief" progress={100} caption="How much do I feel people trust me?" />
+        <ProgressBar className="belief" progress={10} caption="How much do I feel people trust me?" />
         <div className="text-container">{textContainer}</div>
       </Scene>
     );
