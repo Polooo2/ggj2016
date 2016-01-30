@@ -1,2 +1,3 @@
 # ggj2016
-Mayan faking god simulator
+
+Play the game here: http://polooo2.github.io/ggj2016/
