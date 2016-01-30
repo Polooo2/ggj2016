@@ -10,7 +10,7 @@ class World extends Component {
 
   static defaultProps = {
     onChange: function() {},
-  }
+  };
 
   componentDidMount() {
     eventMap.on('change', (key, value) => {
