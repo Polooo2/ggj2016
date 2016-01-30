@@ -12,7 +12,7 @@ class Intro extends Component {
     super(props);
 
     this.state = {
-      introState: 0
+      introState: 0,
     };
   }
 
@@ -22,17 +22,17 @@ class Intro extends Component {
 
   render() {
     const introText = introduction.map(slide => {
-      const lines = slide.text.map(line => <div className="line">{line}</div>);
+      const lines = slide.text.map((line, index) => <div key={index} className="line">{line}</div>);
 
       return <IntroSlide text={lines} button={slide.action} />;
     });
 
     return (
       <Scene name="intro">
+        <Button onClick={this.switchToGame}>Continue</Button>
         {introText}
         <img src={intro} />
         <br />
-        <Button onClick={this.switchToGame}>Continue</Button>
       </Scene>
     );
   }
