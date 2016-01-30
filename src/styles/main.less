@@ -48,7 +48,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .viewport {
-  background-color: #444;
+  background-image: url('../images/background.png');
   color: #fff;
 }
 
@@ -190,8 +190,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .intro-slide {
-  width: 100%;
+  width: ~"calc(100% - 2rem)";
   height: 100%;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
 
   .line {
     margin-bottom: 1.5rem;
@@ -226,6 +228,9 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+img, .image {
+  filter: sepia(100%);
+}
 
 .button {
   font-size: 1.75rem;
@@ -308,7 +313,13 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.skip-button {
+.button-left {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+}
+
+.button-right {
   position: absolute;
   right: 1rem;
   bottom: 1rem;

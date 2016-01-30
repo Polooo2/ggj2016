@@ -43,7 +43,7 @@ class Intro extends Component {
           image={null}
           text={lines}
           isTyping={isTyping}
-          alignImage={(index === 3) ? 'left' : 'right'}
+          alignImage={(index === 2) ? 'left' : 'right'}
           button={slide.action}
           style={{ position: 'absolute', top: `${this.state.introState * 100}%` }}
           onClick={this.onContinue} />
@@ -57,7 +57,7 @@ class Intro extends Component {
     return (
       <Scene name="intro">
         <div className="intro-slide-container" style={style}>{introText}</div>
-        <div className="skip-button">
+        <div className="button-right">
           <Button onClick={this.switchToGame}>Skip intro</Button>
         </div>
       </Scene>
