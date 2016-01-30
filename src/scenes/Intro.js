@@ -57,6 +57,9 @@ class Intro extends Component {
     return (
       <Scene name="intro">
         <div className="intro-slide-container" style={style}>{introText}</div>
+        <div className="skip-button">
+          <Button onClick={this.switchToGame}>Skip intro</Button>
+        </div>
       </Scene>
     );
   }
