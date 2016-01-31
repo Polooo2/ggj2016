@@ -50,7 +50,7 @@
       {
         "text": "Take out your unreasonably massive boombox.",
         "effect": 50,
-        "result": "Skrillex. <br/> <br/> They certainly where not expecting Skrillex. <br/> Some fall on the floor covering their hears, some run in circles crying in despair, 5 of them engage in an experimental expressive dance, a metaphor of the human condition. Emotions run wilde within you, you're being touched where no dancing performance ever reached before. You're compelled to join them and dance 'till the battery lasts."
+        "result": "Skrillex. <br/> <br/> They certainly where not expecting Skrillex. <br/> Some fall on the floor covering their hears, some run in circles crying in despair, 5 of them engage in an experimental expressive dance, a metaphor of the human condition. Emotions run wild within you, you're being touched where no dancing performance ever reached before. You're compelled to join them and dance 'till the battery lasts."
       },
       {
         "text": "Cry like a baby.",
@@ -62,7 +62,7 @@
   {
     "min": 40,
     "max": 60,
-    "intro": "After a perfect execusion of the bystander sidestep you find yourself a meer 10 meters from the Ritual Calendar",
+    "intro": "After a wellperformed series of the bystander sidesteps you find yourself a meer 10 meters from the Ritual Calendar",
     "effects": {
       "win": "",
       "fail": "As you reach for it the warriors snap and takle you down, they're tiny but strong, you won't get out of this. You reach for your Time Machine remote and press all the buttons. <br/> ... <br/> Damn, your remote broke. But where is this? Is this another planet? Weired plants you never saw are all around. An alien sound, somewhat similar to yawning fills the air, trembling you move a giant leaf out of the way and peek. <br/> Triceratops. "
@@ -87,10 +87,10 @@
   {
     "min": 61,
     "max": 90,
-    "intro": "You're there, 5 meters from the Ritual Calendar. A drop of swet runs down your neck while you skreen the crowd, trying to repreciate the friendly and curious expressions you see on their faces.",
+    "intro": "You reached the Ritual Calendar. A drop of swet runs down your neck while you skreen the crowd, trying to repreciate the friendly and curious expressions you see on their faces.",
     "effects": {
       "win": "Yes, you reached the Ritual Calendar! You tweek the numbers real fast and warp back home. <br/> [...] <br/> Thinking back about that day you cannot help but being proud of yourself, you didn't just save the world, you made it better. After your return all the neo-nazis movements had changed: no futile hating on the jews anymore. Now they where focusing all of their efforts in the much nobler cause of eradicating the Swiss, those entitled moddafuckers. ",
-      "fail": ""
+      "fail": "Breathe, you can do this. You're almost there. Oh my god! They can tell, they can tell, they can definitely tell that you're laying your arms weired. Relax, breathe, breathe. <br/> They are all looking at you, all but that skinny Mayan, he's looking inside you! He knows everything, he's gonna kill you! Oh my god you're gonna die! You won't ever see Gertrude again. <br/>AAAAAAAAAAAAAAAAAHHHHHHHH!!!! <br/> Tu-Tum.  "
     },
     "noSelection": {
       "result": "You're just standing there awkwardly, they seem to notice something fishy is going on, but they can't really figure out what",
@@ -100,7 +100,7 @@
       {
         "text": "Get a panick attack",
         "effect": -40,
-        "result": "Breathe, you can do this. You're almost there. Oh my god they can tell, they can definitely tell you're laying your arms weired. No! relax, you can do this. <br/> That skinny Mayan is not looking at you, he's looking inside you! He knows everything, he's gonna kill you! Oh my god you're gonna die! You won't ever see Gertrude again. <br/>... <br/> Gertrude. No! you need to sorldier on, breathe, you can do this."
+        "result": "Breathe, you can do this. You're almost there. Oh my god! They can tell, they can tell, they can definitely tell that you're laying your arms weired. Relax, breathe, breathe. <br/> They are all looking at you, all but that skinny Mayan, he's looking inside you! He knows everything, he's gonna kill you! Oh my god you're gonna die! You won't ever see Gertrude again. <br/>... <br/> Gertrude. No! you need to sorldier on, breathe, you can do this. You can do this"
       },
       {
         "text": "Tweek the Ritual Calendar.",
@@ -114,7 +114,7 @@
     "max": 90,
     "intro": "You spot a peacock hat moving through the crowd, as he emerges you immediatly know: it's a priest, your life is in his hands. ",
     "effects": {
-      "win": "",
+      "win": "You take all the medallions, necklaces and earrings from the crowd and split them 50/50 with the priest. He likes your style. <br/> You point at the Ritual Calendar with a curious look, he puts an arm around your shoulders and walks you there. <br/> Yes, you reached the Ritual Calendar! You tweek the numbers real fast and warp back home. <br/> [...] <br/> Thinking back about that day you cannot help but being proud of yourself, you didn't just save the world, you made it better. After your return all the neo-nazis movements had changed: no futile hating on the jews anymore. Now they where focusing all of their efforts in the much nobler cause of eradicating the Swiss, those entitled moddafuckers. ",
       "fail": "You take your smarter phone: \"Call, Gertrude\" <br/> Tuuut tuu- \"Hans, we're testing the Large Hardon Collider right now, can you call me later?\" <br/>\"Actually... ehm honey, I kind of went and did something stupid.\" <br/>\"...When?\" \"1524, Q'umarkaj I-\" Tuuu... A flash blinds you all, as you're slowly regaining your sight you can barely figure out her shape. She grabs your arm, you're saved. <br/> Dammit, you managed to screw up again, this time she's definitly gonna hide your Nutella for at least a month."
     },
     "noSelection": {
@@ -124,8 +124,8 @@
     "selection": [
       {
         "text": "Ask the audience",
-        "effect": -20,
-        "result": "\"Citizens of Q'umarkaj, I come from the future. I need to tweek the Ritual Calendar or everybody in my timeline will die! Can I tweek it? Preatty please?\" <br/> The crowd looks confused. "
+        "effect": 20,
+        "result": "TV-assistant: \"Ramona, what do you think is best for Hans?\" <br/> Ramona: \"I think he should listen to his wife and stop being a kid, she told him not to do anything stupid didn't she? \" <br/> TV-assistant:\"David, what should Hans do now?\" <br/> David: \"Dropkick them all, shoot the warriors in the face, tweek the calendar. Then he should kidnap the TV-assistant and make sweet love to her on top of the pyramid\" <br/> TV-assistant, blushing: \"Oh my god, David! We are live!\" <br/> David: \"I don't care! I love you! I always did!\" dropping to his knees \"Would you marry me?\" <br/> TV-assistant: \"I- ah, YES! Yes i would!\" "
       },
       {
         "text": "Call a friend",
@@ -140,7 +140,7 @@
       {
         "text": "Jump a question",
         "effect": 0,
-        "result": "/"
+        "result": "Skipped"
       }
     ]
   }
