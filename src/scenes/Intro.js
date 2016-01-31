@@ -17,6 +17,23 @@ class Intro extends Component {
     };
   }
 
+  componentDidMount() {
+    const that = this;
+    // This seems to be off by one
+    document.addEventListener('keyup', e => {
+      const keyCode = e.keyCode || e.which;
+      console.log('introKey', 1);
+      if (that.state.introState < introduction.length) {
+        console.log('introKey', 2);
+        if (keyCode === 13 || keyCode === 32) {
+          that.onContinue();
+        } else if (keyCode === 27) {
+          that.switchToGame();
+        }
+      }
+    }, true);
+  }
+
   onContinue = () => {
     this.setState({
       introState: this.state.introState + 1,
