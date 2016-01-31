@@ -6,7 +6,7 @@ class TypedText extends Component {
     super(props);
 
     this.state = {
-      avgTypingDelay: 15,
+      avgTypingDelay: 10,
     };
   }
 
