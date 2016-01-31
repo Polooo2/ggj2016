@@ -38,6 +38,7 @@ class IntroSlide extends Component {
     }
 
     const image = (this.props.image) ? <img src={this.props.image} border={0} width={320} height={240} style={imageStyle} /> : null;
+    const audio = (this.props.audio) ? <audio autoPlay><source src={this.props.audio} type="audio/mpeg" /></audio> : null;
 
     return (
       <div className={`intro-slide ${this.props.className}`} style={this.props.style}>
@@ -48,6 +49,7 @@ class IntroSlide extends Component {
         <div className={`decision-container ${(this.state.buttonTyping) ? 'show' : ''}`}>
           <Button onClick={this.props.onClick}>1. {this.props.button}</Button>
         </div>
+        {audio}
       </div>
     );
   }

@@ -51,6 +51,7 @@ class Intro extends Component {
           alignImage={(index === 2) ? 'left' : 'right'}
           button={slide.action}
           style={{ position: 'absolute', top: `${this.state.introState * 100}%` }}
+          audio={`sounds/intro${index}.mp3`}
           onClick={this.onContinue} />
       );
     });
