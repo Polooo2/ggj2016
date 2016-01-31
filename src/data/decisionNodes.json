@@ -15,7 +15,7 @@
       {
         "text": "Give her the \"You didn't do your homework!\" look",
         "effect": 20,
-        "result": "The kid stops in her tracks, curiousity and fear quickly fade away from her face while regret and guilt inevitably take over. <br/> The \"you didn't do your homework\" look will never fail you."
+        "result": "The kid stops in her tracks, curiosity and fear quickly fade away from her face while regret and guilt inevitably take over. <br/> The \"you didn't do your homework\" look will never fail you."
       },
       {
         "text": "Smile",
@@ -38,7 +38,7 @@
       "fail": "As you reach for it the warriors freeze. <br/> You confidently raise your arm shouting \"Let it be FIRE!\" and ignite your lighter. <br/> One of them squeals like a castrated pig, fear deforming his face, as he shoves his spear into you. You grasp for air as your perforated lungs fail to be of any use."
     },
     "noSelection": {
-      "result": "Pedro de Alvarado charges in with his conquistadores cavalry, 180 horsemans strong. Swords fall down left and right, screams and blood are numbing you senses. <br/> You barely have the time to curse your dumb ideas when a sword finds your neck.",
+      "result": "Pedro de Alvarado charges in with his conquistadors cavalry, 180 horsemen strong. Swords fall down left and right, screams and blood are numbing you senses. <br/> You barely have the time to curse your dumb ideas when a sword finds your neck.",
       "effect": -100
     },
     "selection": [
@@ -112,9 +112,9 @@
   {
     "min": 1,
     "max": 90,
-    "intro": "You spot a peacock hat moving through the crowd, as he emerges you immediatly know: it's a priest, your life is in his hands. ",
+    "intro": "You spot a peacock hat moving through the crowd, as he emerges you immediately know: it's a priest, your life is in his hands. ",
     "effects": {
-      "win": "You take all the medallions, necklaces and earrings from the crowd and split them 50/50 with the priest. He likes your style. <br/> You point at the Ritual Calendar with a curious look, he puts an arm around your shoulders and walks you there. <br/> Yes, you reached the Ritual Calendar! You tweak the numbers real fast and warp back home. <br/> [...] <br/> Thinking back about that day you cannot help but being proud of yourself, you didn't just save the world, you made it better. After your return all the neo-nazis movements had changed: no futile hating on the jews anymore. Now they where focusing all of their efforts in the much nobler cause of eradicating the Swiss, those entitled moddafuckers. ",
+      "win": "You take all the medallions, necklaces and earrings from the crowd and split them 50/50 with the priest. He likes your style. <br/> You point at the Ritual Calendar with a curious look, he puts an arm around your shoulders and walks you there. <br/> Yes, you reached the Ritual Calendar! You tweak the numbers real fast and warp back home. <br/> Thinking back about that day you cannot help but being proud of yourself, you didn't just save the world, you made it better. After your return all the neo-nazis movements had changed: no futile hating on the jews anymore. Now they where focusing all of their efforts in the much nobler cause of eradicating the Swiss, those entitled moddafuckers. ",
       "fail": "You take your smarter phone: \"Call, Gertrude\" <br/> Tuuut tuu- \"Hans, we're testing the Large Hardon Collider right now, can you call me later?\" <br/>\"Actually... ehm honey, I kind of went and did something stupid.\" <br/>\"...When?\" \"1524, Q'umarkaj I-\" Tuuu... A flash blinds you all, as you're slowly regaining your sight you can barely figure out her shape. She grabs your arm, you're saved. <br/> Dammit, you managed to screw up again, this time she's definitely gonna hide your Nutella for at least a month."
     },
     "noSelection": {
