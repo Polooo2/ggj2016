@@ -19,8 +19,8 @@ class Credits extends Component {
             <li key={1}>Dawid Pach</li>
             <li key={2}>Luca Lombardo</li>
           </ul>
-          <div>Special thanks to Malcolm Crum, Ruth Bosch and all playtesters.</div>
-          <div>Uses sounds from freesound.org</div>
+          <div>Special thanks to Malcolm Crum, Ruth Bosch, and all playtesters.</div>
+          <div>Uses "Felix Blume: A Village In Africa General Ambience" from freesound.org</div>
         </div>
         <div className="button-left">
           <Button onClick={this.switchToIntro}>Back</Button>
