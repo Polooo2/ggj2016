@@ -13,15 +13,15 @@
     "scary.",
     "Once back home you get in bed but you can't sleep, your head is filled with thoughts on the end of the world and the Mayan empire.",
     "You know what you need to do.",
-    "First thing next morning you look around but cannot find them, gotta ask Gertrude:"
+    "First thing next morning you look around but cannot find them, you need to ask Gertrude:"
   ],
   "action": "\"Honey, where are the keys for the Time Machine?\""
 }, {
   "text": [
     "Gertrude: \"The Time Machine? Hans, are you trying to kill Hitler again?\"",
-    "You: \"NO! no, no, no. I really just only want to lay down on the american grasslands!\"",
-    "Gertrude: \"Uhm. I hid them in the Latin dictionary.\"",
-    "You: \"Thanks my dear\""
+    "You: \"NO! No, no. I really just only want to lay down on the American grasslands, I swear!\"",
+    "Gertrude: \"Uhm. Ok, I hid them in the Latin dictionary. Don't go and do anything stupid dear.\"",
+    "You: \"No worry!\""
   ],
   "action": "Use the Time Machine and get back to the Mayan Empire"
 }, {
