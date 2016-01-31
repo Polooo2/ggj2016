@@ -1,5 +1,5 @@
 export default {
-  timer: 20,
+  timer: 15,
   belief: {
     max: 100,
     min: 0,
