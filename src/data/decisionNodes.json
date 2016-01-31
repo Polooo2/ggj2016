@@ -2,13 +2,13 @@
   {
     "min": 30,
     "max": 50,
-    "intro": "A plump kid is approaching you warely. She slowly slides her left foot forward as she points a trebling stick towards your white socked, Crocs equiped feets.",
+    "intro": "A plump kid is approaching you warely. She slowly slides her left foot forward as she points a trembling stick towards your white socked, Crocs equiped feets.",
     "effects": {
       "win": "",
       "fail": ""
     },
     "noSelection": {
-      "result": "A bright flash blinds you all. <br/> \"Hans, I told you not do anthing stupid didn't I?\" <br/> As you slowly regain vision you can see her standing, arms crossed, where the kid used to be, half of the poor thing is still in this reality spouting a fountain of blood, staining Gertrude's skirt. She grabs you by the ear and drags you back to your place. ",
+      "result": "A bright flash blinds you all. <br/> \"Hans, I told you not do anthing stupid, didn't I?\" <br/> As you slowly regain vision you can see her standing, arms crossed, where the kid used to be, half of the poor thing is still in this reality spouting a fountain of blood, staining Gertrude's skirt. She grabs you by the ear and drags you back to your place. ",
       "effect": -100
     },
     "selection": [
@@ -50,12 +50,12 @@
       {
         "text": "Take out your unreasonably massive boombox.",
         "effect": 50,
-        "result": "Skrillex. <br/> <br/> They certainly where not expecting Skrillex. <br/> Some fall on the floor covering their hears, some run in circles crying in despair, 5 of them engage in an experimental expressive dance, a metaphor of the human condition. Emotions run wild within you, you're being touched where no dancing performance ever reached before. You're compelled to join them and dance 'till the battery lasts."
+        "result": "Skrillex. <br/> <br/> They certainly where not expecting Skrillex. <br/> Some fall on the floor covering their hears, some run in circles crying in despair, five of them engage in an experimental expressive dance, a metaphor of the human condition. Emotions run wild within you, you're being touched where no dancing performance ever reached before. You're compelled to join them and dance 'till the battery lasts."
       },
       {
         "text": "Cry like a baby.",
         "effect": 10,
-        "result": "The warriors faces resemble a question mark as they cross each other's eyes. After a brief moment they drop their spears and start laughting their asses off."
+        "result": "The warriors faces resemble a question mark as they cross each other's eyes. After a brief moment they drop their spears and start laughing their asses off."
       }
     ]
   },
@@ -87,7 +87,7 @@
   {
     "min": 61,
     "max": 90,
-    "intro": "You reached the Ritual Calendar. A drop of swet runs down your neck while you skreen the crowd, trying to repreciate the friendly and curious expressions you see on their faces.",
+    "intro": "You reached the Ritual Calendar. A drop of sweat runs down your neck while you screen the crowd, trying to repreciate the friendly and curious expressions you see on their faces.",
     "effects": {
       "win": "Yes, you reached the Ritual Calendar! You tweak the numbers real fast and warp back home. <br/> [...] <br/> Thinking back about that day you cannot help but being proud of yourself, you didn't just save the world, you made it better. After your return all the neo-nazis movements had changed: no futile hating on the jews anymore. Now they where focusing all of their efforts in the much nobler cause of eradicating the Swiss, those entitled moddafuckers. ",
       "fail": "Breathe, you can do this. You're almost there. Oh my god! They can tell, they can tell, they can definitely tell that you're laying your arms weired. Relax, breathe, breathe. <br/> They are all looking at you, all but that skinny Mayan, he's looking inside you! He knows everything, he's gonna kill you! Oh my god you're gonna die! You won't ever see Gertrude again. <br/>AAAAAAAAAAAAAAAAAHHHHHHHH!!!! <br/> Tu-Tum.  "
@@ -100,7 +100,7 @@
       {
         "text": "Get a panick attack",
         "effect": -40,
-        "result": "Breathe, you can do this. You're almost there. Oh my god! They can tell, they can tell, they can definitely tell that you're laying your arms weired. Relax, breathe, breathe. <br/> They are all looking at you, all but that skinny Mayan, he's looking inside you! He knows everything, he's gonna kill you! Oh my god you're gonna die! You won't ever see Gertrude again. <br/>... <br/> Gertrude. No! you need to sorldier on, breathe, you can do this. You can do this"
+        "result": "Breathe, you can do this. You're almost there. Oh my god! They can tell, they can tell, they can definitely tell that you're laying your arms weired. Relax, breathe, breathe. <br/> They are all looking at you, all but that skinny Mayan, he's looking inside you! He knows everything, he's gonna kill you! Oh my god you're gonna die! You won't ever see Gertrude again. <br/>... <br/> Gertrude. No! you need to soldier on, breathe, you can do this. You can do this."
       },
       {
         "text": "Tweak the Ritual Calendar.",
@@ -115,7 +115,7 @@
     "intro": "You spot a peacock hat moving through the crowd, as he emerges you immediatly know: it's a priest, your life is in his hands. ",
     "effects": {
       "win": "You take all the medallions, necklaces and earrings from the crowd and split them 50/50 with the priest. He likes your style. <br/> You point at the Ritual Calendar with a curious look, he puts an arm around your shoulders and walks you there. <br/> Yes, you reached the Ritual Calendar! You tweak the numbers real fast and warp back home. <br/> [...] <br/> Thinking back about that day you cannot help but being proud of yourself, you didn't just save the world, you made it better. After your return all the neo-nazis movements had changed: no futile hating on the jews anymore. Now they where focusing all of their efforts in the much nobler cause of eradicating the Swiss, those entitled moddafuckers. ",
-      "fail": "You take your smarter phone: \"Call, Gertrude\" <br/> Tuuut tuu- \"Hans, we're testing the Large Hardon Collider right now, can you call me later?\" <br/>\"Actually... ehm honey, I kind of went and did something stupid.\" <br/>\"...When?\" \"1524, Q'umarkaj I-\" Tuuu... A flash blinds you all, as you're slowly regaining your sight you can barely figure out her shape. She grabs your arm, you're saved. <br/> Dammit, you managed to screw up again, this time she's definitly gonna hide your Nutella for at least a month."
+      "fail": "You take your smarter phone: \"Call, Gertrude\" <br/> Tuuut tuu- \"Hans, we're testing the Large Hardon Collider right now, can you call me later?\" <br/>\"Actually... ehm honey, I kind of went and did something stupid.\" <br/>\"...When?\" \"1524, Q'umarkaj I-\" Tuuu... A flash blinds you all, as you're slowly regaining your sight you can barely figure out her shape. She grabs your arm, you're saved. <br/> Dammit, you managed to screw up again, this time she's definitely gonna hide your Nutella for at least a month."
     },
     "noSelection": {
       "result": "A DeLorean runs you over.",
