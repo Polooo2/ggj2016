@@ -4,6 +4,7 @@ import { decisionNodes } from 'data';
 import Scene from './Scene';
 import { Button, ProgressBar, Text, TextContainer, Timer } from 'components';
 import consts from 'consts';
+import { ambience } from 'sounds';
 
 import World from 'store/World';
 
@@ -125,7 +126,7 @@ class Game extends Component {
           <Timer onTimeUp={() => this.selDecision(this.state.selectedDecision.noSelection.effect, true, 0)} timerState={this.state.timerActive}/>
         </div>
         <audio id="sound-background" autoPlay loop>
-          <source src="sounds/174445__felix-blume__a-village-in-africa-general-ambience.mp3" type="audio/mpeg" />
+          <source src={ambience} type="audio/mpeg" />
         </audio>
       </Scene>
     );

@@ -5,6 +5,7 @@ import { BackgroundImage, Button, ProgressBar, IntroSlide } from 'components';
 import World from 'store/World';
 
 import images from 'images';
+import sounds from 'sounds';
 
 import { introduction } from 'data';
 
@@ -68,7 +69,7 @@ class Intro extends Component {
           alignImage={(index === 2) ? 'left' : 'right'}
           button={slide.action}
           style={{ position: 'absolute', top: `${this.state.introState * 100}%` }}
-          audio={`sounds/intro${index}.mp3`}
+          audio={sounds[`intro${index}`]}
           onClick={this.onContinue} />
       );
     });

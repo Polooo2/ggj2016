@@ -38,12 +38,12 @@ module.exports = {
   },
   module: {
     preLoaders: [{
-      test: /\.(js|jsx)$/,
+      test: /\.jsx?$/,
       exclude: [/node_modules/, /lib/],
       loader: 'eslint'
     }],
     loaders: [{
-      test: /\.(js|jsx)$/,
+      test: /\.jsx?$/,
       exclude: /node_modules/,
       loader: 'react-hot!babel-loader'
     }, {
@@ -84,6 +84,9 @@ module.exports = {
       loader: 'file-loader'
     }, {
       test: /\.webm$/,
+      loader: 'file-loader'
+    }, {
+      test: /\.mp3$/,
       loader: 'file-loader'
     }]
   },
