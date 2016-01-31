@@ -107,7 +107,7 @@ class Game extends Component {
     };
     return (
       <Scene name="game">
-        <ProgressBar className="this.state.belief" progress={belief} caption="How much do I feel people trust me?" />
+        <ProgressBar className="belief" progress={this.state.belief} caption="How much do I feel people trust me?" />
         <div className="text-container">
           <TextContainer {...helperObj}/>
           <Timer onTimeUp={() => this.selDecision(this.state.selectedDecision.noSelection.effect, true)} timerState={this.state.resultText}/>
