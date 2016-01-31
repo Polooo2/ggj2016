@@ -2,20 +2,20 @@
   {
     "min": 30,
     "max": 50,
-    "intro": "A plump kid is approaching you warely, slowly sliding her left foot forward as she points a trebling stick towards your white socked, Crocs equiped feets.",
+    "intro": "A plump kid is approaching you warely. She slowly slides her left foot forward as she points a trebling stick towards your white socked, Crocs equiped feets.",
     "effects": {
       "win": "",
       "fail": ""
     },
     "noSelection": {
-      "result": "A bright flash blinds you all. <br/> \"Hans, I told you not do anthing stupid didn't I?\" <br/> As you slowly regain vision you can see her standing with her harms crossed where the kid used to be, half of the poor thing is still in this reality spouting a fountain of blood, staining Gertrude's skirt. She grabs you by the ear and drags you back to your place. ",
+      "result": "A bright flash blinds you all. <br/> \"Hans, I told you not do anthing stupid didn't I?\" <br/> As you slowly regain vision you can see her standing, arms crossed, where the kid used to be, half of the poor thing is still in this reality spouting a fountain of blood, staining Gertrude's skirt. She grabs you by the ear and drags you back to your place. ",
       "effect": -100
     },
     "selection": [
       {
         "text": "Give her the \"You didn't do your homework!\" look",
         "effect": 20,
-        "result": "The kid stops in her tracks, curiousity and fear quickly fade away from her face while regret and guilt inevitably take over. <br/> The \"you didn't do your homework\" look is never gonna fail you."
+        "result": "The kid stops in her tracks, curiousity and fear quickly fade away from her face while regret and guilt inevitably take over. <br/> The \"you didn't do your homework\" look will never fail you."
       },
       {
         "text": "Smile",
@@ -25,7 +25,7 @@
       {
         "text": "Kick her",
         "effect": -10,
-        "result": "The sticks flies while she runs away shouting. She hides behind what looks to be her father.<br/> He does not seem to like you."
+        "result": "The stick flies while she runs away shouting. She hides behind what looks to be her father.<br/> He does not seem to like you."
       }
     ]
   },
@@ -112,14 +112,14 @@
   {
     "min": 0,
     "max": 90,
-    "intro": "You spot a peacock hat moving through the crowd, everybody is making room for it's wearer, as he emerges from the crowd your heart bounces to your throat: It's definitely a priest, how you'll be judged will decide everything. ",
+    "intro": "You spot a peacock hat moving through the crowd, as he emerges you immediatly know: it's a priest, your life is in his hands. ",
     "effects": {
       "win": "",
       "fail": "You take your smarter phone: \"Call, Gertrude\" <br/> Tuuut tuu- \"Hans, we're testing the Large Hardon Collider right now, can you call me later?\" <br/>\"Actually... ehm honey, I kind of went and did something stupid.\" <br/>\"...When?\" \"1524, Q'umarkaj I-\" Tuuu... A flash blinds you all, as you're slowly regaining your sight you can barely figure out her shape. She grabs your arm, you're saved. <br/> Dammit, you managed to screw up again, this time she's definitly gonna hide your Nutella for at least a month."
     },
     "noSelection": {
-      "result": "",
-      "effect": null
+      "result": "A DeLorean runs you over.",
+      "effect": -100
     },
     "selection": [
       {
