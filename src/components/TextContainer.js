@@ -34,7 +34,7 @@ class TextContainer extends Component {
     }, true);
   }
 
-  onTypingDone = () => {
+  onContinue = () => {
     this.setState({
       showDecisions: true,
     });
@@ -67,6 +67,7 @@ class TextContainer extends Component {
           <TypedText className="decision-text" onTypingDone={this.onTypingDone}>
             <Text className="text-area">{this.props.selectedDecision.intro}</Text>
           </TypedText>
+          {(!this.state.showDecisions) ? <Button className="button-right" onClick={this.onContinue}>Continue</Button> : null}
           <div className={`decision-container ${(this.state.showDecisions) ? 'show' : ''}`}>{decisions}</div>
         </div>
       );
