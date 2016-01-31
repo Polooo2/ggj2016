@@ -7,13 +7,12 @@ import consts from 'consts';
 
 import World from 'store/World';
 
-var belief = consts.belief.init;
-
 class Game extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
+      belief: consts.belief.init,
       selectionVisible: true,
       selectedDecision: this.getAvailableDecisions(),
       timer: consts.timer,
@@ -27,7 +26,7 @@ class Game extends Component {
    */
   getAvailableDecisions = () => {
     var availableDecisions = decisionNodes.filter((elem) => {
-      return !elem.used && elem.min <= belief && belief <= elem.max;
+      return !elem.used && elem.min <= this.state.belief && this.state.belief <= elem.max;
     });
     if (availableDecisions.length === 0) {
       console.log('Couldnt find any unused nodes');
@@ -47,7 +46,7 @@ class Game extends Component {
       });
     } else {
       // reset belief
-      belief = consts.belief.init;
+      this.state.belief = consts.belief.init;
       // reset decisions file
       decisionNodes.forEach(function(elem, index) {
         decisionNodes[index].used = false;
@@ -63,7 +62,7 @@ class Game extends Component {
    * @param answer
      */
   selDecision = (effect, nothingDone, answer) => {
-    belief += effect;
+    var belief = this.state.belief + effect;
     let text = '';
     console.log('selDecisions', decisionNodes);
     const nextDecision = this.getAvailableDecisions();
@@ -79,7 +78,7 @@ class Game extends Component {
       this.nextScene = 'Game';
     }
 
-    if (nothingDone || text === '') {
+    if (nothingDone) {
       text = this.state.selectedDecision.noSelection.result;
     }
 
@@ -89,6 +88,7 @@ class Game extends Component {
     }
 
     this.setState({
+      belief: belief,
       selectedDecision: nextDecision,
       selectionVisible: false,
       resultText: text,
@@ -107,7 +107,7 @@ class Game extends Component {
     };
     return (
       <Scene name="game">
-        <ProgressBar className="belief" progress={belief} caption="How much do I feel people trust me?" />
+        <ProgressBar className="this.state.belief" progress={belief} caption="How much do I feel people trust me?" />
         <div className="text-container">
           <TextContainer {...helperObj}/>
           <Timer onTimeUp={() => this.selDecision(this.state.selectedDecision.noSelection.effect, true)} timerState={this.state.resultText}/>
