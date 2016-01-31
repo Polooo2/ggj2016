@@ -20,6 +20,7 @@ class Credits extends Component {
             <li key={2}>Luca Lombardo</li>
           </ul>
           <div>Special thanks to Malcolm Crum, Ruth Rooibosch and all playtesters.</div>
+          <div>Uses sounds from freesound.org</div>
         </div>
         <div className="button-left">
           <Button onClick={this.switchToIntro}>Back</Button>
