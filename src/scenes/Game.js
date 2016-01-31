@@ -14,10 +14,12 @@ class Game extends Component {
     this.state = {
       belief: consts.belief.init,
       selectionVisible: true,
-      selectedDecision: this.getAvailableDecisions(),
+      selectedDecision: null,
       timer: consts.timer,
       resultText: null,
     };
+
+    this.state.selectedDecision = this.getAvailableDecisions();
   }
 
   /**
