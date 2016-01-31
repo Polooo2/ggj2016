@@ -26,6 +26,10 @@ class TextContainer extends Component {
           console.log('key', normalizedKey, keyCode);
           this.onButtonClick(that.props.selectedDecision.selection[normalizedKey], normalizedKey);
         }
+      } else if (!this.continueValid && !that.state.showDecisions) {
+        if (keyCode === 13 || keyCode === 32) {
+          that.onContinue();
+        }
       } else if (this.continueValid) {
         if (keyCode === 13 || keyCode === 32) {
           that.props.switchToGame();
@@ -58,6 +62,7 @@ class TextContainer extends Component {
 
     if (this.props.selectionVisible) {
       this.continueValid = false;
+
       const decisions = this.props.selectedDecision.selection.map((dec, i) => {
         return (
           <Button
