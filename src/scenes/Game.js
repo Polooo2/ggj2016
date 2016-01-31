@@ -16,11 +16,18 @@ class Game extends Component {
       selectionVisible: true,
       selectedDecision: null,
       timer: consts.timer,
+      timerActive: false,
       resultText: null,
     };
 
     this.state.selectedDecision = this.getAvailableDecisions();
   }
+
+  onContinue = () => {
+    this.setState({
+      timerActive: true,
+    });
+  };
 
   /**
    * Select, return a decision node and mark it as used
@@ -105,14 +112,15 @@ class Game extends Component {
       selectedDecision,
       selDecision: this.selDecision,
       switchToGame: this.switchToGame,
-      nextScene: this.nextScene
+      nextScene: this.nextScene,
+      onContinue: this.onContinue,
     };
     return (
       <Scene name="game">
         <ProgressBar className="belief" progress={this.state.belief} caption="How much do I feel people trust me?" />
         <div className="text-container">
           <TextContainer {...helperObj}/>
-          <Timer onTimeUp={() => this.selDecision(this.state.selectedDecision.noSelection.effect, true)} timerState={this.state.resultText}/>
+          <Timer onTimeUp={() => this.selDecision(this.state.selectedDecision.noSelection.effect, true)} timerState={(this.state.timerActive) ? null : 'some hack right here!'}/>
         </div>
         <audio id="sound-background" autoPlay loop>
           <source src="sounds/174445__felix-blume__a-village-in-africa-general-ambience.mp3" type="audio/mpeg" />

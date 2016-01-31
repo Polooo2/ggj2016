@@ -35,6 +35,10 @@ class TextContainer extends Component {
   }
 
   onContinue = () => {
+    if (this.props.onContinue) {
+      this.props.onContinue();
+    }
+
     this.setState({
       showDecisions: true,
     });
