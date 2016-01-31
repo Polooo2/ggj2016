@@ -10,7 +10,8 @@ class Credits extends Component {
           <li key={1}>Dawid Pach</li>
           <li key={2}>Luca Lombardo</li>
         </ul>
-        <div>Special thanks to Malcolm Crum.</div>
+        <div>Special thanks to Malcolm Crum, Ruth Bosch and all playtesters.</div>
+        <div>Uses sounds from freesound.org</div>
       </div>
     );
   }
