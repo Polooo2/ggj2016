@@ -52,6 +52,7 @@ class Game extends Component {
       this.setState({
         selectionVisible: true,
         resultText: null,
+        timerActive: false,
       });
     } else {
       // reset belief
@@ -101,6 +102,7 @@ class Game extends Component {
       selectedDecision: nextDecision,
       selectionVisible: false,
       resultText: text,
+      timerActive: false,
     });
   };
 
@@ -120,7 +122,7 @@ class Game extends Component {
         <ProgressBar className="belief" progress={this.state.belief} caption="How much do I feel people trust me?" />
         <div className="text-container">
           <TextContainer {...helperObj}/>
-          <Timer onTimeUp={() => this.selDecision(this.state.selectedDecision.noSelection.effect, true)} timerState={(this.state.timerActive) ? null : 'some hack right here!'}/>
+          <Timer onTimeUp={() => this.selDecision(this.state.selectedDecision.noSelection.effect, true, 0)} timerState={this.state.timerActive}/>
         </div>
         <audio id="sound-background" autoPlay loop>
           <source src="sounds/174445__felix-blume__a-village-in-africa-general-ambience.mp3" type="audio/mpeg" />

@@ -21,7 +21,12 @@ class Timer extends Component {
   }
 
   componentDidMount() {
-    this.startTimer();
+    if (this.props.timerState) {
+      this.startTimer();
+    } else {
+      this.stopTimer();
+      this.resetTimer();
+    }
   }
 
   startTimer = () => {
@@ -54,7 +59,7 @@ class Timer extends Component {
   componentWillReceiveProps(nextProps) {
     if (this.props.timerState !== nextProps.timerState) {
       console.log('timetState changed');
-      if (nextProps.timerState !== null) {
+      if (!nextProps.timerState) {
         console.log('stopping timer');
         this.stopTimer();
         this.resetTimer();
