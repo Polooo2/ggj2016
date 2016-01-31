@@ -89,7 +89,7 @@
     "max": 90,
     "intro": "You reached the Ritual Calendar. A drop of swet runs down your neck while you skreen the crowd, trying to repreciate the friendly and curious expressions you see on their faces.",
     "effects": {
-      "win": "Yes, you reached the Ritual Calendar! You tweek the numbers real fast and warp back home. <br/> [...] <br/> Thinking back about that day you cannot help but being proud of yourself, you didn't just save the world, you made it better. After your return all the neo-nazis movements had changed: no futile hating on the jews anymore. Now they where focusing all of their efforts in the much nobler cause of eradicating the Swiss, those entitled moddafuckers. ",
+      "win": "Yes, you reached the Ritual Calendar! You tweak the numbers real fast and warp back home. <br/> [...] <br/> Thinking back about that day you cannot help but being proud of yourself, you didn't just save the world, you made it better. After your return all the neo-nazis movements had changed: no futile hating on the jews anymore. Now they where focusing all of their efforts in the much nobler cause of eradicating the Swiss, those entitled moddafuckers. ",
       "fail": "Breathe, you can do this. You're almost there. Oh my god! They can tell, they can tell, they can definitely tell that you're laying your arms weired. Relax, breathe, breathe. <br/> They are all looking at you, all but that skinny Mayan, he's looking inside you! He knows everything, he's gonna kill you! Oh my god you're gonna die! You won't ever see Gertrude again. <br/>AAAAAAAAAAAAAAAAAHHHHHHHH!!!! <br/> Tu-Tum.  "
     },
     "noSelection": {
@@ -103,7 +103,7 @@
         "result": "Breathe, you can do this. You're almost there. Oh my god! They can tell, they can tell, they can definitely tell that you're laying your arms weired. Relax, breathe, breathe. <br/> They are all looking at you, all but that skinny Mayan, he's looking inside you! He knows everything, he's gonna kill you! Oh my god you're gonna die! You won't ever see Gertrude again. <br/>... <br/> Gertrude. No! you need to sorldier on, breathe, you can do this. You can do this"
       },
       {
-        "text": "Tweek the Ritual Calendar.",
+        "text": "Tweak the Ritual Calendar.",
         "effect": 100,
         "result": ""
       }
@@ -114,7 +114,7 @@
     "max": 90,
     "intro": "You spot a peacock hat moving through the crowd, as he emerges you immediatly know: it's a priest, your life is in his hands. ",
     "effects": {
-      "win": "You take all the medallions, necklaces and earrings from the crowd and split them 50/50 with the priest. He likes your style. <br/> You point at the Ritual Calendar with a curious look, he puts an arm around your shoulders and walks you there. <br/> Yes, you reached the Ritual Calendar! You tweek the numbers real fast and warp back home. <br/> [...] <br/> Thinking back about that day you cannot help but being proud of yourself, you didn't just save the world, you made it better. After your return all the neo-nazis movements had changed: no futile hating on the jews anymore. Now they where focusing all of their efforts in the much nobler cause of eradicating the Swiss, those entitled moddafuckers. ",
+      "win": "You take all the medallions, necklaces and earrings from the crowd and split them 50/50 with the priest. He likes your style. <br/> You point at the Ritual Calendar with a curious look, he puts an arm around your shoulders and walks you there. <br/> Yes, you reached the Ritual Calendar! You tweak the numbers real fast and warp back home. <br/> [...] <br/> Thinking back about that day you cannot help but being proud of yourself, you didn't just save the world, you made it better. After your return all the neo-nazis movements had changed: no futile hating on the jews anymore. Now they where focusing all of their efforts in the much nobler cause of eradicating the Swiss, those entitled moddafuckers. ",
       "fail": "You take your smarter phone: \"Call, Gertrude\" <br/> Tuuut tuu- \"Hans, we're testing the Large Hardon Collider right now, can you call me later?\" <br/>\"Actually... ehm honey, I kind of went and did something stupid.\" <br/>\"...When?\" \"1524, Q'umarkaj I-\" Tuuu... A flash blinds you all, as you're slowly regaining your sight you can barely figure out her shape. She grabs your arm, you're saved. <br/> Dammit, you managed to screw up again, this time she's definitly gonna hide your Nutella for at least a month."
     },
     "noSelection": {
@@ -125,7 +125,7 @@
       {
         "text": "Ask the audience",
         "effect": 20,
-        "result": "TV-assistant: \"Ramona, what do you think is best for Hans?\" <br/> Ramona: \"I think he should listen to his wife and stop being a kid, she told him not to do anything stupid didn't she? \" <br/> TV-assistant:\"David, what should Hans do now?\" <br/> David: \"Dropkick them all, shoot the warriors in the face, tweek the calendar. Then he should kidnap the TV-assistant and make sweet love to her on top of the pyramid\" <br/> TV-assistant, blushing: \"Oh my god, David! We are live!\" <br/> David: \"I don't care! I love you! I always did!\" dropping to his knees \"Would you marry me?\" <br/> TV-assistant: \"I- ah, YES! Yes i would!\" "
+        "result": "TV-assistant: \"Ramona, what do you think is best for Hans?\" <br/> Ramona: \"I think he should listen to his wife and stop being a kid, she told him not to do anything stupid didn't she? \" <br/> TV-assistant:\"David, what should Hans do now?\" <br/> David: \"Dropkick them all, shoot the warriors in the face, tweak the calendar. Then he should kidnap the TV-assistant and make sweet love to her on top of the pyramid\" <br/> TV-assistant, blushing: \"Oh my god, David! We are live!\" <br/> David: \"I don't care! I love you! I always did!\" dropping to his knees \"Would you marry me?\" <br/> TV-assistant: \"I- ah, YES! Yes i would!\" "
       },
       {
         "text": "Call a friend",
