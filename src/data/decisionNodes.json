@@ -110,7 +110,7 @@
     ]
   },
   {
-    "min": 0,
+    "min": 1,
     "max": 90,
     "intro": "You spot a peacock hat moving through the crowd, as he emerges you immediatly know: it's a priest, your life is in his hands. ",
     "effects": {
