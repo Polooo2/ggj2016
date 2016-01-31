@@ -114,6 +114,9 @@ class Game extends Component {
           <TextContainer {...helperObj}/>
           <Timer onTimeUp={() => this.selDecision(this.state.selectedDecision.noSelection.effect, true)} timerState={this.state.resultText}/>
         </div>
+        <audio autoPlay loop volume="0.5">
+          <source src="sounds/174445__felix-blume__a-village-in-africa-general-ambience.mp3" type="audio/mpeg" />
+        </audio>
       </Scene>
     );
   }

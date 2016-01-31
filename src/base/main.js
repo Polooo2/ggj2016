@@ -31,9 +31,6 @@ const game = (
   <Viewport width={1024} height={614}>
     <div className="background" />
     <SceneDirector />
-    <audio autoPlay loop>
-      <source src="images/music.mp3" type="audio/mpeg" />
-    </audio>
   </Viewport>
 );
 
